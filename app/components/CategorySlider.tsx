@@ -1,37 +1,46 @@
 "use client";
-import { SetStateAction, useState, useRef } from "react";
+import { useState, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
+
 const productsCategory = [
   {
     id: 1,
-    image:
-      "https://d32zxht0g2dn3w.cloudfront.net/s3fs-public/2024-01/Wiring_device.png",
+    image: "/switch-btn.png",
     width: 800,
     height: 600,
   },
   {
     id: 2,
-    image:
-      "https://d32zxht0g2dn3w.cloudfront.net/s3fs-public/2024-02/48730448-f4e7-4cc5-a96f-b9914d90a220.png",
+    image: "/red-switch.jpg",
     width: 800,
     height: 600,
   },
   {
     id: 3,
-    image:
-      "https://d32zxht0g2dn3w.cloudfront.net/s3fs-public/2024-01/Switchgear&protection.jpg",
+    image: "/wire.jpg",
     width: 800,
     height: 600,
   },
   {
     id: 4,
-    image:
-      "https://d32zxht0g2dn3w.cloudfront.net/s3fs-public/2024-01/Wiring_device.png",
+    image: "/switchess.jpg",
+    width: 800,
+    height: 600,
+  },
+  {
+    id: 5,
+    image: "/modulebox.jpg",
+    width: 800,
+    height: 600,
+  },
+  {
+    id: 6,
+    image: "/plugs.jpg",
     width: 800,
     height: 600,
   },
@@ -49,8 +58,7 @@ const CategorySlider = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    beforeChange: (current: any, next: SetStateAction<number>) =>
-      setSlideIndex(next),
+    beforeChange: (current: number, next: number) => setSlideIndex(next),
     centerMode: true,
     responsive: [
       {

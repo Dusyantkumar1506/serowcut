@@ -49,17 +49,17 @@ const Accordion: React.FC = () => {
       <div className="md:w-1/3 flex flex-col items-center md:items-start mb-4 md:mb-0 md:mr-8">
         <div className="w-full h-auto mb-4 relative ">
           <Image
-            src="https://d32zxht0g2dn3w.cloudfront.net/s3fs-public/2024-01/Wiring_device.png"
+            src="/serowcut-map.png"
             alt="Serowcut Products"
             layout="responsive"
-            width={500}
-            height={500}
+            width={400}
+            height={400}
             className="object-contain  rounded-xl"
           />
         </div>
         <Link
           href="/contact"
-          className="bg-[#3172b3] hover:bg-[#215c97] text-white py-2 px-4 rounded"
+          className="service-btn bg-[#3172b3] hover:bg-[#215c97] text-white py-2 px-4 rounded"
         >
           Contact Us
         </Link>
@@ -69,7 +69,7 @@ const Accordion: React.FC = () => {
           <div className="py-2" key={index}>
             <h2 onClick={() => handleAccordionClick(index)}>
               <button
-                className={`w-full text-left p-4 border rounded-2xl ${
+                className={`w-full text-left p-4 font-semibold border rounded-2xl ${
                   index === activeIndex
                     ? "bg-[#3172b3] hover:bg-[#215c97] text-white"
                     : "bg-gray-200 text-gray-900"

@@ -3,6 +3,18 @@ import Link from "next/link";
 import React from "react";
 
 const InfoPdf = () => {
+  const handleOpenInNewTab = () => {
+    const pdfUrl =
+      "https://drive.google.com/file/d/1cHa7c1d-ySuX6SCL3FM3Bwdf5kNx-KtW/view?usp=sharing";
+
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.target = "_blank"; // Open in new tab
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="flex flex-wrap gap-6 pt-12 pb-12 bg-[#0b0c13] px-8">
       {/* Card 1 */}
@@ -15,7 +27,10 @@ const InfoPdf = () => {
             Looking for something specific? Download our brochure to get all the
             details.
           </p>
-          <button className="px-4 py-2 text-sm bg-black text-white  rounded-full hover:bg-[#3172b3]">
+          <button
+            onClick={handleOpenInNewTab}
+            className="px-4 py-2 text-sm bg-black text-white  rounded-full hover:bg-[#3172b3]"
+          >
             Download Now
           </button>
         </div>
@@ -36,17 +51,15 @@ const InfoPdf = () => {
             Connect with us for any support, grievance, queries or feedback. Our
             executives will be happy to assist you.
           </p>
-          <button className="px-4 py-2 text-sm bg-black text-white  rounded-full hover:bg-[#3172b3]">
+          <Link
+            href="/contact"
+            className="px-4 py-2 text-sm bg-black text-white  rounded-full hover:bg-[#3172b3]"
+          >
             Contact Us
-          </button>
+          </Link>
         </div>
         <div>
-          <Image
-            src="https://d32zxht0g2dn3w.cloudfront.net/s3fs-public/2023-12/customer.jpg"
-            alt="Qrcode"
-            width={1000}
-            height={1000}
-          />
+          <Image src="/customer.jpg" alt="Qrcode" width={1000} height={1000} />
         </div>
       </div>
     </section>

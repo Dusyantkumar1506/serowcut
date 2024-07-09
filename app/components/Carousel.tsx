@@ -9,62 +9,52 @@ const products = [
   {
     title: "Product 1",
     description: "This is the description for product 1.",
-    image:
-      "https://d32zxht0g2dn3w.cloudfront.net/s3fs-public/2024-01/Wiring_device.png",
+    image: "/switch-btn.png",
   },
   {
     title: "Product 2",
     description: "This is the description for product 2.",
-    image:
-      "https://d32zxht0g2dn3w.cloudfront.net/s3fs-public/2024-01/Wiring_device.png",
+    image: "/switch-btn.png",
   },
   {
     title: "Product 3",
     description: "This is the description for product 3.",
-    image:
-      "https://d32zxht0g2dn3w.cloudfront.net/s3fs-public/2024-01/Wiring_device.png",
+    image: "/switch-btn.png",
   },
   {
     title: "Product 4",
     description: "This is the description for product 4.",
-    image:
-      "https://d32zxht0g2dn3w.cloudfront.net/s3fs-public/2024-01/Wiring_device.png",
+    image: "/switch-btn.png",
   },
   {
     title: "Product 5",
     description: "This is the description for product 5.",
-    image:
-      "https://d32zxht0g2dn3w.cloudfront.net/s3fs-public/2024-01/Wiring_device.png",
+    image: "/switch-btn.png",
   },
   {
     title: "Product 6",
     description: "This is the description for product 1.",
-    image:
-      "https://d32zxht0g2dn3w.cloudfront.net/s3fs-public/2024-01/Wiring_device.png",
+    image: "/switch-btn.png",
   },
   {
     title: "Product 7",
     description: "This is the description for product 2.",
-    image:
-      "https://d32zxht0g2dn3w.cloudfront.net/s3fs-public/2024-01/Wiring_device.png",
+    image: "/switch-btn.png",
   },
   {
     title: "Product 8",
     description: "This is the description for product 3.",
-    image:
-      "https://d32zxht0g2dn3w.cloudfront.net/s3fs-public/2024-01/Wiring_device.png",
+    image: "/switch-btn.png",
   },
   {
     title: "Product 9",
     description: "This is the description for product 4.",
-    image:
-      "https://d32zxht0g2dn3w.cloudfront.net/s3fs-public/2024-01/Wiring_device.png",
+    image: "/switch-btn.png",
   },
   {
     title: "Product 10",
     description: "This is the description for product 5.",
-    image:
-      "https://d32zxht0g2dn3w.cloudfront.net/s3fs-public/2024-01/Wiring_device.png",
+    image: "/switch-btn.png",
   },
 ];
 
@@ -108,15 +98,15 @@ const ProductCarousel = () => {
       </h2>
       <Slider {...settings} className="bg-[#0b0c13]">
         {products.map((product, index) => (
-          <Link href="products">
-            <div key={index} className="px-8">
+          <div key={index} className="px-8">
+            <Link href="/products">
               <div className="bg-white rounded-lg shadow-lg p-6">
                 <div className="relative h-48 w-full mb-4">
                   <Image
                     src={product.image}
                     alt={product.title}
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    style={{ objectFit: "cover" }}
                     className="rounded"
                   />
                 </div>
@@ -125,8 +115,8 @@ const ProductCarousel = () => {
                 </h3>
                 <p className="text-gray-600 mb-2">{product.description}</p>
               </div>
-            </div>
-          </Link>
+            </Link>
+          </div>
         ))}
       </Slider>
     </div>

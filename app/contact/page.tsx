@@ -7,8 +7,12 @@ import { FaFacebook } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
+import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
+  const emailAddress = "serowcut@gmail.com";
+  const phoneNumber = "+919370000038";
+
   return (
     <div className="overflow-hidden ">
       <section className="relative mt-16">
@@ -34,71 +38,7 @@ const Contact = () => {
             </h1>
           </div>
 
-          <form className="mx-auto mb-0 mt-8 max-w-md space-y-4">
-            <div>
-              <label htmlFor="name" className="sr-only">
-                Name
-              </label>
-              <div className="relative">
-                <input
-                  type="text"
-                  id="name"
-                  className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm bg-gray-100"
-                  placeholder="Enter name"
-                />
-              </div>
-            </div>
-
-            <div>
-              <label htmlFor="email" className="sr-only">
-                Email
-              </label>
-              <div className="relative">
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm bg-gray-100"
-                  placeholder="Enter email"
-                />
-              </div>
-            </div>
-
-            <div>
-              <label htmlFor="subject" className="sr-only">
-                Subject
-              </label>
-              <div className="relative">
-                <input
-                  type="text"
-                  id="subject"
-                  className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm bg-gray-100"
-                  placeholder="Enter subject"
-                />
-              </div>
-            </div>
-
-            <div>
-              <label htmlFor="message" className="sr-only">
-                Message
-              </label>
-              <div className="relative">
-                <textarea
-                  id="message"
-                  className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm bg-gray-100"
-                  placeholder="Enter message"
-                ></textarea>
-              </div>
-            </div>
-
-            <div className="flex items-center justify-between">
-              <button
-                type="submit"
-                className="inline-block rounded-lg bg-[#3172b3] hover:bg-[#215c97] px-5 py-3 text-sm font-medium text-white"
-              >
-                Send Message
-              </button>
-            </div>
-          </form>
+          <ContactForm />
         </div>
         <div className="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
           <div className="mx-auto max-w-lg text-center">
@@ -119,7 +59,9 @@ const Contact = () => {
               </div>
               <div className="flex justify-center flex-col">
                 <h1 className="font-semibold text-lg">Have any question?</h1>
-                <p className="text-base">298438455698</p>
+                <Link href={`tel:${phoneNumber}`} className="text-base">
+                  {phoneNumber}
+                </Link>
               </div>
             </div>
             <div className="flex gap-6">
@@ -128,7 +70,9 @@ const Contact = () => {
               </div>
               <div className="flex justify-center flex-col">
                 <h1 className="font-semibold text-lg">Our email</h1>
-                <p className="text-base">serowcut@gmail.com</p>
+                <Link href={`mailto:${emailAddress}`} className="text-base">
+                  {emailAddress}
+                </Link>
               </div>
             </div>
             <div className="flex gap-6">
@@ -137,7 +81,7 @@ const Contact = () => {
               </div>
               <div className="flex justify-center flex-col">
                 <h1 className="font-semibold text-lg">Visit anytime</h1>
-                <p className="text-base">Apna showroom serowcut, pinjore</p>
+                <p className="text-base">Perfect Enterprises</p>
               </div>
             </div>
             <div className="flex items-center gap-8">

@@ -92,3 +92,10 @@
     display: flex;
   }
 }
+.service-btn {
+  box-shadow: rgb(82, 141, 203) 0px 10px 30px -10px;
+}
+.contact-btn {
+  box-shadow: rgb(82, 141, 203) 0px 10px 30px -10px;
+}
+

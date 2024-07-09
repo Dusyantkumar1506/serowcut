@@ -36,7 +36,7 @@ const WhySerowcut = () => {
             <div className="relative h-40 w-full sm:h-56 md:h-64 lg:h-80 xl:h-96 rounded-xl overflow-hidden">
               <Image
                 alt="switch"
-                src="https://d32zxht0g2dn3w.cloudfront.net/s3fs-public/2024-02/2ae70dfe-60f2-4e1f-a389-b67a6002821a.png"
+                src="/exlusive1.png"
                 layout="fill"
                 objectFit="cover"
                 className="rounded-xl"
@@ -45,7 +45,7 @@ const WhySerowcut = () => {
             <div className="relative h-40 w-full sm:h-56 md:h-64 lg:h-80 xl:h-96 rounded-xl overflow-hidden">
               <Image
                 alt="socket"
-                src="https://d32zxht0g2dn3w.cloudfront.net/s3fs-public/2024-02/d8359a25-8162-4f26-8f3e-c4e0ae38db04.png"
+                src="/serowcut-b1.jpg"
                 layout="fill"
                 objectFit="cover"
                 className="rounded-xl"

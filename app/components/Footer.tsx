@@ -2,9 +2,9 @@ import { FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { MdMarkEmailRead } from "react-icons/md";
 import React from "react";
 import { IoLogoInstagram } from "react-icons/io5";
-import { FaFacebook } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   const emailAddress = "serowcut@gmail.com";
@@ -16,7 +16,13 @@ const Footer = () => {
         <div>
           <div className="pb-4">
             <Link href="/" className=" font-logo text-white text-[18px]">
-              <img src="/serowcut.png" alt="logo" className=" w-48 h-auto" />
+              <Image
+                src="/serowcut.png"
+                alt="logo"
+                width={192}
+                height={48}
+                className="w-48 h-auto"
+              />
             </Link>
           </div>
           <h1 className="text-[14px] mt-[0.5rem] text-white opacity-70 mb-3">
@@ -26,7 +32,7 @@ const Footer = () => {
           </h1>
           <Link
             href={`mailto:${emailAddress}`}
-            className=" text-[#3172b3] underline font-semibold"
+            className="text-[#3172b3] underline font-semibold"
           >
             {emailAddress}
           </Link>
@@ -63,7 +69,7 @@ const Footer = () => {
           <div className="flex items-center mt-[1rem] space-x-2">
             <FaMapMarkerAlt className="w-[1rem] h-[1rem] text-[#3172b3]" />
             <p className="text-[17px] font-normal text-white opacity-75">
-              Kalka, Haryana
+              Perfect Enterprises
             </p>
           </div>
           <div className="flex items-center mt-[1rem] space-x-2">
@@ -89,22 +95,31 @@ const Footer = () => {
       <div className="mt-[1.4rem] w-[90%] mx-auto text-white opacity-70 flex justify-between items-center">
         &#169; Copyright Serowcut {new Date().getFullYear()}
         <div className="flex items-center gap-5">
-          <h1 className="text-lg font-semibold  hidden md:block">
+          <h1 className="text-lg font-semibold hidden md:block">
             Social Links:{" "}
           </h1>
           <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center hover:bg-[#3172b3]">
-            <Link href="" className=" flex justify-center items-center">
-              <IoLogoInstagram className=" w-5 h-5" color="white" />
+            <Link
+              href="https://www.instagram.com"
+              className="flex justify-center items-center"
+            >
+              <IoLogoInstagram className="w-5 h-5" color="white" />
             </Link>
           </div>
           <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center hover:bg-[#3172b3]">
-            <Link href="" className=" flex justify-center items-center">
-              <FaFacebook className=" w-5 h-5" color="white" />
+            <Link
+              href="https://www.facebook.com"
+              className="flex justify-center items-center"
+            >
+              <FaFacebook className="w-5 h-5" color="white" />
             </Link>
           </div>
           <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center hover:bg-[#3172b3]">
-            <Link href="" className=" flex justify-center items-center ">
-              <FaLinkedinIn className=" w-5 h-5" color="white" />
+            <Link
+              href="https://www.linkedin.com"
+              className="flex justify-center items-center"
+            >
+              <FaLinkedinIn className="w-5 h-5" color="white" />
             </Link>
           </div>
         </div>

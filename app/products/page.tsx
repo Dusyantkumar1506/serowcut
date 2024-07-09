@@ -44,6 +44,15 @@ const Products = () => {
               <option value="flats">Flats</option>
               <option value="heels">Heels</option>
               <option value="sandals">Sandals</option>
+              <option value="sockets">Sockets</option>
+              <option value="switches">Switches</option>
+              <option value="sockets&switches">Sockets & Switches</option>
+              <option value="modulebox">Module box</option>
+              <option value="wires">Wires & cabels</option>
+              <option value="wires">pipes & concealed box</option>
+              <option value="wires">MVC box</option>
+              <option value="wires">Fan box</option>
+
               {/* Add more categories */}
             </select>
           </div>

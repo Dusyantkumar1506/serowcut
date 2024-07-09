@@ -43,7 +43,7 @@ const data = [
     prevPrice: "$140,00",
     newPrice: "200",
     company: "Adidas",
-    
+
     color: "black",
     category: "sneakers",
   },
@@ -316,6 +316,17 @@ const data = [
     company: "Adidas",
     color: "black",
     category: "flats",
+  },
+  {
+    img: "/switch-btn.png",
+    title: "Wedding Prom Bridal",
+    star: <AiFillStar className="rating-star" />,
+    reviews: "(123 reviews)",
+    prevPrice: "$140,00",
+    newPrice: "50",
+    company: "Serowcut",
+    color: "black",
+    category: "switches",
   },
 ];
 

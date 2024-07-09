@@ -38,8 +38,14 @@ const Nav = ({ openNav }: Props) => {
       className={`fixed w-[100%] bg-black transition-all duration-300 z-[1000]`}
     >
       <div className="flex items-center h-[12vh]  justify-between w-[90%] mx-auto">
-        <Link href="/" className=" font-logo text-white text-[18px]">
-          <img src="/serowcut.png" alt="logo" className=" w-48 h-auto" />
+        <Link href="/" className="font-logo text-white text-[18px]">
+          <Image
+            src="/serowcut.png"
+            alt="logo"
+            width={192}
+            height={48}
+            className="w-48 h-auto"
+          />
         </Link>
         <ul className="md:flex hidden items-center space-x-10">
           <li>
