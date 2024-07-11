@@ -7,54 +7,44 @@ import Link from "next/link";
 
 const products = [
   {
-    title: "Product 1",
-    description: "This is the description for product 1.",
-    image: "/switch-btn.png",
+    title: "Switch",
+    image: "/switch10.webp",
   },
   {
-    title: "Product 2",
-    description: "This is the description for product 2.",
-    image: "/switch-btn.png",
+    title: "Socket",
+    image: "/socket1.webp",
   },
   {
-    title: "Product 3",
-    description: "This is the description for product 3.",
-    image: "/switch-btn.png",
+    title: "Switch & Socket",
+    image: "/switch-socket1.webp",
   },
   {
-    title: "Product 4",
-    description: "This is the description for product 4.",
-    image: "/switch-btn.png",
+    title: "KITKAT FUSE UNITS",
+    image: "/kitkat/REGULAR KITKAT FUSE UNITS.webp",
   },
   {
-    title: "Product 5",
-    description: "This is the description for product 5.",
-    image: "/switch-btn.png",
+    title: "MODULE BOX",
+    image: "/modulebox/MODULE BOX ECO MS RANGE.webp",
   },
   {
-    title: "Product 6",
-    description: "This is the description for product 1.",
-    image: "/switch-btn.png",
+    title: "Serowcut Wires",
+    image: "/wires/wire1.webp",
   },
   {
-    title: "Product 7",
-    description: "This is the description for product 2.",
-    image: "/switch-btn.png",
+    title: "LED EYE LIGHT1W",
+    image: "/led-lights/LED EYE LIGHT1W.webp",
   },
   {
-    title: "Product 8",
-    description: "This is the description for product 3.",
-    image: "/switch-btn.png",
+    title: "CHANGE OVERS",
+    image: "/change-overs/AUTOMATIC CHANGE OVERS.webp",
   },
   {
-    title: "Product 9",
-    description: "This is the description for product 4.",
-    image: "/switch-btn.png",
+    title: "CONCEALED BOX",
+    image: "/concealed-box/CONCEALED BOX RING RANGE.webp",
   },
   {
-    title: "Product 10",
-    description: "This is the description for product 5.",
-    image: "/switch-btn.png",
+    title: "TPN MCB BOXES",
+    image: "/mcb-boxes/TPN MCB DISTRIBUTION BOXES.webp",
   },
 ];
 
@@ -73,12 +63,17 @@ const ProductCarousel = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -92,28 +87,25 @@ const ProductCarousel = () => {
       <h2 className="text-3xl font-bold text-center mb-6">
         Our{" "}
         <span className="bg-gradient-to-b from-sky-600 to-slate-700 bg-clip-text text-transparent">
-          {" "}
           Products
         </span>{" "}
       </h2>
       <Slider {...settings} className="bg-[#0b0c13]">
         {products.map((product, index) => (
-          <div key={index} className="px-8">
+          <div key={index} className="px-2 sm:px-4 md:px-6 lg:px-8">
             <Link href="/products">
-              <div className="bg-white rounded-lg shadow-lg p-6">
-                <div className="relative h-48 w-full mb-4">
+              <div className="bg-gradient-to-br from-sky-100 to-neutral-50 rounded-lg shadow-lg p-6">
+                <div className="relative h-48 w-full mb-3">
                   <Image
                     src={product.image}
                     alt={product.title}
                     fill
-                    style={{ objectFit: "cover" }}
-                    className="rounded"
+                    className="rounded-lg object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-800">
+                <h3 className="text-lg font-semibold text-gray-800">
                   {product.title}
                 </h3>
-                <p className="text-gray-600 mb-2">{product.description}</p>
               </div>
             </Link>
           </div>

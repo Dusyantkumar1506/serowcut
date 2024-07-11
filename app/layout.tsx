@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "Welcome to SEROWCUT! We specialize in high-quality electrical services, offering expertise in a wide range of products including sockets, switches, switchgear, and protection devices. Our commitment to excellence ensures top-notch solutions tailored to your needs. Let's power up your projects together!",
   icons: {
-    icon: ["/favicon.ico?v=4"],
+    icon: ["/davicon.io?v=4"],
     apple: ["/apple-touch-icon.png?v=4"],
     shortcut: ["/apple-touch-icon.png"],
   },

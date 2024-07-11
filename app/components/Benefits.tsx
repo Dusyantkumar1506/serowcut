@@ -7,7 +7,6 @@ import {
   FaHandHoldingUsd,
 } from "react-icons/fa";
 import { TbPaywall } from "react-icons/tb";
-import Link from "next/link";
 
 const Benefits = () => {
   const benefitsData = [

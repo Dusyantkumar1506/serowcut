@@ -10,6 +10,26 @@ const Footer = () => {
   const emailAddress = "serowcut@gmail.com";
   const phoneNumber = "+919370000038";
 
+  const socialLinks = [
+    {
+      icon: <IoLogoInstagram className="w-5 h-5" color="white" />,
+      url: "https://www.instagram.com",
+    },
+    {
+      icon: <FaFacebook className="w-5 h-5" color="white" />,
+      url: "https://www.facebook.com",
+    },
+    {
+      icon: <FaLinkedinIn className="w-5 h-5" color="white" />,
+      url: "https://www.linkedin.com",
+    },
+  ];
+  const quickLinks = [
+    { text: "About Us", href: "/about" },
+    { text: "Our Services", href: "/services" },
+    { text: "Products", href: "/products" },
+    { text: "Contact Us", href: "/contact" },
+  ];
   return (
     <footer className="pt-[5rem] pb-[3rem] bg-black">
       <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem] border-b-[1.4px] pb-5 border-gray-600 border-opacity-40">
@@ -41,26 +61,17 @@ const Footer = () => {
           <h1 className="text-white font-semibold mb-[1.4rem] text-[17px]">
             Quick Links
           </h1>
-          <Link href="/about">
-            <p className="text-[15px] text-white opacity-80 mb-[1rem] block hover:text-[#3172b3]">
-              About Us
-            </p>
-          </Link>
-          <Link href="/services">
-            <p className="text-[15px] text-white opacity-80 mb-[1rem] block hover:text-[#3172b3]">
-              Our Services
-            </p>
-          </Link>
-          <Link href="/products">
-            <p className="text-[15px] text-white opacity-80 mb-[1rem] block hover:text-[#3172b3]">
-              Products
-            </p>
-          </Link>
-          <Link href="/contact">
-            <p className="text-[15px] text-white opacity-80 mb-[1rem] block hover:text-[#3172b3]">
-              Contact Us
-            </p>
-          </Link>
+          <ul>
+            {quickLinks.map((link, index) => (
+              <li key={index}>
+                <Link href={link.href}>
+                  <p className="text-white opacity-80 block mb-4 hover:text-[#3172b3]">
+                    {link.text}
+                  </p>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
         <div className="lg:mx-auto">
           <h1 className="text-white font-semibold mb-[1.4rem] text-[17px]">
@@ -98,30 +109,19 @@ const Footer = () => {
           <h1 className="text-lg font-semibold hidden md:block">
             Social Links:{" "}
           </h1>
-          <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center hover:bg-[#3172b3]">
-            <Link
-              href="https://www.instagram.com"
-              className="flex justify-center items-center"
+          {socialLinks.map((link, index) => (
+            <div
+              key={index}
+              className="w-8 h-8 bg-black rounded-full flex items-center justify-center hover:bg-[#3172b3]"
             >
-              <IoLogoInstagram className="w-5 h-5" color="white" />
-            </Link>
-          </div>
-          <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center hover:bg-[#3172b3]">
-            <Link
-              href="https://www.facebook.com"
-              className="flex justify-center items-center"
-            >
-              <FaFacebook className="w-5 h-5" color="white" />
-            </Link>
-          </div>
-          <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center hover:bg-[#3172b3]">
-            <Link
-              href="https://www.linkedin.com"
-              className="flex justify-center items-center"
-            >
-              <FaLinkedinIn className="w-5 h-5" color="white" />
-            </Link>
-          </div>
+              <Link
+                href={link.url}
+                className="flex justify-center items-center"
+              >
+                {link.icon}
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
     </footer>

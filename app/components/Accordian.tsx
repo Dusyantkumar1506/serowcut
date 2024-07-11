@@ -49,9 +49,8 @@ const Accordion: React.FC = () => {
       <div className="md:w-1/3 flex flex-col items-center md:items-start mb-4 md:mb-0 md:mr-8">
         <div className="w-full h-auto mb-4 relative ">
           <Image
-            src="/serowcut-map.png"
+            src="/serowcut-map.webp"
             alt="Serowcut Products"
-            layout="responsive"
             width={400}
             height={400}
             className="object-contain  rounded-xl"
@@ -69,7 +68,7 @@ const Accordion: React.FC = () => {
           <div className="py-2" key={index}>
             <h2 onClick={() => handleAccordionClick(index)}>
               <button
-                className={`w-full text-left p-4 font-semibold border rounded-2xl ${
+                className={`w-full text-left p-4 font-semibold border rounded-2xl transition-colors duration-300 ${
                   index === activeIndex
                     ? "bg-[#3172b3] hover:bg-[#215c97] text-white"
                     : "bg-gray-200 text-gray-900"

@@ -18,10 +18,10 @@ const Contact = () => {
       <section className="relative mt-16">
         <div className="relative w-full h-96 md:h-96">
           <Image
-            src="/banner.png"
+            src="/banner.webp"
             alt="Contact Banner"
-            layout="fill"
-            objectFit="cover"
+            fill
+            className="object-cover"
           />
           <div className="absolute inset-0 flex items-center justify-center text-center text-white">
             <h1 className="text-2xl md:text-5xl font-semibold">Contact us</h1>

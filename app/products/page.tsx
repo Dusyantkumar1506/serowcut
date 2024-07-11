@@ -9,16 +9,27 @@ import Image from "next/image";
 const Products = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [category, setCategory] = useState<string>("");
-  const [color, setColor] = useState<string>("");
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const productsPerPage = 12;
+  const emailAddress = "serowcut@gmail.com";
+  const phoneNumber = "+919370000038";
 
   const filteredProducts = data.filter((product) => {
     return (
       product.title.toLowerCase().includes(searchTerm.toLowerCase()) &&
-      (category ? product.category === category : true) &&
-      (color ? product.color === color : true)
+      (category ? product.category === category : true)
     );
   });
 
+  // Pagination logic
+  const indexOfLastProduct = currentPage * productsPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+  const currentProducts = filteredProducts.slice(
+    indexOfFirstProduct,
+    indexOfLastProduct
+  );
+
+  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
   return (
     <div className="container mx-auto px-4 md:pt-32 pb-16 pt-40 ">
       <div className="flex flex-col md:flex-row md:space-x-4">
@@ -40,72 +51,53 @@ const Products = () => {
               onChange={(e) => setCategory(e.target.value)}
             >
               <option value="">All</option>
-              <option value="sneakers">Sneakers</option>
-              <option value="flats">Flats</option>
-              <option value="heels">Heels</option>
-              <option value="sandals">Sandals</option>
               <option value="sockets">Sockets</option>
               <option value="switches">Switches</option>
               <option value="sockets&switches">Sockets & Switches</option>
               <option value="modulebox">Module box</option>
+              <option value="ledlights">LED Lights</option>
               <option value="wires">Wires & cabels</option>
-              <option value="wires">pipes & concealed box</option>
-              <option value="wires">MVC box</option>
-              <option value="wires">Fan box</option>
-
+              <option value="pipes-bend">Pipes & Bend</option>
+              <option value="changeovers">Change overs</option>
+              <option value="concealed-box">Concealed box</option>
+              <option value="mcb-boxes">MCB box</option>
+              <option value="warmer">Room Warmer</option>
+              <option value="fans">Fans</option>
+              <option value="fan-box">Fan box</option>
+              <option value="kitkat">Kitkat</option>
               {/* Add more categories */}
             </select>
           </div>
-          <div className="mb-4">
-            <h3 className="font-semibold">Color</h3>
-            <div className="flex space-x-2">
-              <label className="flex items-center">
-                <input
-                  type="radio"
-                  name="color"
-                  value="white"
-                  checked={color === "white"}
-                  onChange={(e) => setColor(e.target.value)}
-                  className="mr-2"
-                />
-                White
-              </label>
-              <label className="flex items-center">
-                <input
-                  type="radio"
-                  name="color"
-                  value="red"
-                  checked={color === "red"}
-                  onChange={(e) => setColor(e.target.value)}
-                  className="mr-2"
-                />
-                Red
-              </label>
-              {/* Add more colors */}
-            </div>
-          </div>
-
-          <div className="p-4">
+          <div className="p-4 hidden md:block">
             <div className="mb-8">
-              <p>328 STEWART AVENUE, BETHPAGE, NEWYORK. 11714</p>
-              <p>Phone: +1516.965.2193</p>
-              <p>Email: Serowcut@gmail.com</p>
-            </div>
-            <div className="mb-8">
-              <h3 className="font-bold text-red-500">Quick Link</h3>
-              <ul>
-                <li>Store Location</li>
-                <li>Contact Us</li>
-              </ul>
+              <p className="mb-1">
+                PERFECT ENTERPRISES A1, BUILDING NO.1, GALA NO.110 OM INDUSTRIAL
+                ESTATE WALIV VASIA (EAST)- 4011208
+              </p>
+              <p>
+                <Link href={`tel:${phoneNumber}`} className="text-base">
+                  {phoneNumber}
+                </Link>
+              </p>
+              <p>
+                <Link href={`mailto:${emailAddress}`} className="text-base">
+                  {emailAddress}
+                </Link>
+              </p>
             </div>
             <div className="mb-8">
               <h3 className="font-bold text-red-500">Information</h3>
               <ul>
-                <li>About Us</li>
-                <li>Contact Us</li>
+                <Link href="/about">
+                  <li>About Us</li>
+                </Link>
+                <Link href="/contact">
+                  <li>Contact Us</li>
+                </Link>
               </ul>
             </div>
             <div className="flex space-x-4">
+              {/* Social media icons */}
               <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center hover:bg-[#3172b3]">
                 <Link href="" className=" flex justify-center items-center">
                   <IoLogoInstagram className=" w-5 h-5" color="white" />
@@ -126,23 +118,45 @@ const Products = () => {
         </div>
         <div className="md:w-3/4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {filteredProducts.map((product, index: number) => (
-              <div key={index} className="border p-4 rounded shadow-custom">
+            {currentProducts.map((product, index: number) => (
+              <div
+                key={index}
+                className="border p-4 rounded shadow-custom bg-[#fcfefe]"
+              >
                 <div className="relative w-full h-48">
                   <Image
                     src={product.img}
                     alt={product.title}
-                    layout="fill"
-                    objectFit="cover"
-                    className="rounded"
+                    fill
+                    className="rounded object-contain"
+                    loading="lazy"
                   />
                 </div>
                 <h3 className="text-lg font-semibold mt-4">{product.title}</h3>
                 <p className="text-gray-600">Company: {product.company}</p>
-                <p className="text-gray-600">Color: {product.color}</p>
                 <p className="text-gray-600">Category: {product.category}</p>
               </div>
             ))}
+          </div>
+
+          {/* Pagination */}
+          <div className=" mt-8 flex justify-center">
+            {Array.from(
+              { length: Math.ceil(filteredProducts.length / productsPerPage) },
+              (_, index) => (
+                <button
+                  key={index}
+                  onClick={() => paginate(index + 1)}
+                  className={`mx-1 px-4 py-2 border ${
+                    currentPage === index + 1
+                      ? "bg-gradient-to-tr from-sky-900 to-slate-700 text-white"
+                      : "bg-gray-200 text-gray-800"
+                  } rounded`}
+                >
+                  {index + 1}
+                </button>
+              )
+            )}
           </div>
         </div>
       </div>

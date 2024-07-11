@@ -36,7 +36,7 @@ const InfoPdf = () => {
         </div>
         <div>
           <Image
-            src="/Apna Showroom (3).png"
+            src="/Apna Showroom (3).webp"
             alt="Qrcode"
             width={450}
             height={450}
@@ -59,7 +59,7 @@ const InfoPdf = () => {
           </Link>
         </div>
         <div>
-          <Image src="/customer.jpg" alt="Qrcode" width={1000} height={1000} />
+          <Image src="/customer.webp" alt="Qrcode" width={1000} height={1000} />
         </div>
       </div>
     </section>

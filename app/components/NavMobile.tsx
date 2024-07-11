@@ -14,7 +14,7 @@ const NavMobile = ({ showNav, closeNav }: Props) => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
-      closeNav(); // Close the mobile navigation after clicking on a link
+      closeNav();
     }
   };
 

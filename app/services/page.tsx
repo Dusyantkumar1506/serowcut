@@ -7,49 +7,49 @@ const servicesData = [
     title: "Switches",
     subtitle: "SEROWCUT",
     description:
-      "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
-    imageSrc: "/switchess.jpg",
+      "High-quality switches for style and reliable performance. Perfect for modern and traditional designs.",
+    imageSrc: "/switchess.webp",
   },
   {
     title: "Sockets",
     subtitle: "SEROWCUT",
     description:
-      "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
-    imageSrc: "/red-switch.jpg",
+      "Convenient, safe, and sleek designed sockets. Meets rigorous safety standards while complementing interiors.",
+    imageSrc: "/red-switch.webp",
   },
   {
     title: "Plugs",
     subtitle: "SEROWCUT",
     description:
-      "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
-    imageSrc: "/plugs.jpg",
+      "Durable plugs for all your electrical needs. Designed for long-lasting performance and ease of use.",
+    imageSrc: "/plugs.webp",
   },
   {
     title: "Wires, Cables and Tapes",
     subtitle: "SEROWCUT",
     description:
-      "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
-    imageSrc: "/wire.jpg",
+      "Premium wires, cables, and tapes for superior conductivity. Ideal for residential and commercial applications.",
+    imageSrc: "/wire.webp",
+  },
+  {
+    title: "LED Lights",
+    subtitle: "SEROWCUT",
+    description:
+      "Efficient LED lights for residential and commercial use. Engineered for superior performance and energy efficiency.",
+    imageSrc: "/led.webp",
   },
   {
     title: "Module box",
     subtitle: "SEROWCUT",
     description:
-      "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
-    imageSrc: "/modulebox.jpg",
-  },
-  {
-    title: "Switchgear & Protection Devices",
-    subtitle: "SEROWCUT",
-    description:
-      "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
-    imageSrc: "/plugs.jpg",
+      "Safe and organized housing for electrical components. Robust construction and easy installation.",
+    imageSrc: "/modulebox.webp",
   },
 ];
 
 const Services = () => {
   return (
-    <div className="overflow-hidden bg-[#0b0c13] ">
+    <div className="overflow-hidden bg-[#0b0c13]">
       <section className="text-gray-400 body-font pt-20">
         <div className="container px-5 py-20 mx-auto">
           <div className="flex flex-col text-center w-full mb-16">
@@ -70,17 +70,16 @@ const Services = () => {
           <div className="flex flex-wrap -m-4">
             {servicesData.map((service, index) => (
               <div key={index} className="lg:w-1/3 sm:w-1/2 p-4">
-                <div className="flex relative">
+                <div className="flex relative group">
                   <div className="absolute inset-0 w-full h-full">
                     <Image
                       alt={service.title}
                       className="object-cover object-center"
                       src={service.imageSrc}
-                      layout="fill"
-                      objectFit="cover"
+                      fill
                     />
                   </div>
-                  <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                  <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                     <h2 className="tracking-widest text-sm title-font font-medium text-blue-400 mb-1">
                       {service.subtitle}
                     </h2>
@@ -95,6 +94,21 @@ const Services = () => {
           </div>
         </div>
       </section>
+      {/* video */}
+      <section className="mt-8 pb-10">
+        <div className="relative w-full h-64 md:h-96 overflow-hidden">
+          <iframe
+            src="https://www.youtube.com/embed/DU-x6eLFYKc?autoplay=1&mute=1&loop=1&playlist=DU-x6eLFYKc&controls=0&showinfo=0&modestbranding=1&rel=0&iv_load_policy=3&fs=0&disablekb=1&playsinline=1"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </div>
+      </section>
+
       <section>
         <Accordion />
       </section>

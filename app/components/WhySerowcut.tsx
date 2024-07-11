@@ -36,18 +36,16 @@ const WhySerowcut = () => {
             <div className="relative h-40 w-full sm:h-56 md:h-64 lg:h-80 xl:h-96 rounded-xl overflow-hidden">
               <Image
                 alt="switch"
-                src="/exlusive1.png"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-xl"
+                src="/exlusive1.webp"
+                fill
+                className="rounded-xl object-cover"
               />
             </div>
             <div className="relative h-40 w-full sm:h-56 md:h-64 lg:h-80 xl:h-96 rounded-xl overflow-hidden">
               <Image
                 alt="socket"
-                src="/serowcut-b1.jpg"
-                layout="fill"
-                objectFit="cover"
+                src="/serowcut-b1.webp"
+                fill
                 className="rounded-xl"
               />
             </div>

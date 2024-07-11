@@ -28,31 +28,31 @@ const ImageSlider = () => {
 
   const slides = [
     {
-      img: "/switch.png",
+      img: "/switch.webp",
       text: "Switches and Sockets",
       width: 800,
       height: 600,
     },
     {
-      img: "/access.JPG",
+      img: "/access.webp",
       text: "All Accessories",
       width: 800,
       height: 600,
     },
     {
-      img: "/roma_banner_0.jpg",
+      img: "/roma_banner_0.webp",
       text: "Serowcut Switches and Sockets",
       width: 800,
       height: 600,
     },
     {
-      img: "/wires.png",
+      img: "/wires.webp",
       text: "Wires, Cables and Tapes",
       width: 800,
       height: 600,
     },
     {
-      img: "/switches.jpg",
+      img: "/switches.webp",
       text: "Switchgear & Protection Devices",
       width: 800,
       height: 600,
