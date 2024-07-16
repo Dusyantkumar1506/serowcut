@@ -71,8 +71,11 @@ const ImageSlider = () => {
             alt={`Slide ${index + 1}`}
             width={slide.width}
             height={slide.height}
+            loading={index === 0 ? "eager" : "lazy"}
+            priority={index === 0}
             className="w-full h-auto sm:h-96 object-cover"
             style={{ maxHeight: "calc(100vh - 200px)" }}
+            unoptimized
           />
           <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-opacity-50 text-lg sm:text-3xl px-6 sm:px-10 font-semibold text-white p-2">
             {slide.text}

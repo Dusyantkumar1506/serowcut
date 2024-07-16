@@ -105,6 +105,7 @@ const CategorySlider = () => {
                 width={product.width}
                 height={product.height}
                 className="mx-auto"
+                unoptimized
               />
             </div>
           ))}

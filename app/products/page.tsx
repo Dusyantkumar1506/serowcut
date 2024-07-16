@@ -1,10 +1,12 @@
 "use client";
 import { useState } from "react";
 import data from "../db";
+import dynamic from "next/dynamic";
 import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
 import { IoLogoInstagram } from "react-icons/io5";
-import Image from "next/image";
+import InfoPdf from "../components/InfoPdf";
+const ProductImage = dynamic(() => import("../components/ProductImage"));
 
 const Products = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
@@ -30,8 +32,9 @@ const Products = () => {
   );
 
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
+
   return (
-    <div className="container mx-auto px-4 md:pt-32 pb-16 pt-40 ">
+    <section className="container mx-auto px-4 md:pt-32 pb-16 pt-40">
       <div className="flex flex-col md:flex-row md:space-x-4">
         <div className="md:w-1/4">
           <div className="mb-4">
@@ -123,15 +126,7 @@ const Products = () => {
                 key={index}
                 className="border p-4 rounded shadow-custom bg-[#fcfefe]"
               >
-                <div className="relative w-full h-48">
-                  <Image
-                    src={product.img}
-                    alt={product.title}
-                    fill
-                    className="rounded object-contain"
-                    loading="lazy"
-                  />
-                </div>
+                <ProductImage src={product.img} alt={product.title} />
                 <h3 className="text-lg font-semibold mt-4">{product.title}</h3>
                 <p className="text-gray-600">Company: {product.company}</p>
                 <p className="text-gray-600">Category: {product.category}</p>
@@ -140,18 +135,18 @@ const Products = () => {
           </div>
 
           {/* Pagination */}
-          <div className=" mt-8 flex justify-center">
+          <div className="mt-8 flex flex-wrap justify-center">
             {Array.from(
               { length: Math.ceil(filteredProducts.length / productsPerPage) },
               (_, index) => (
                 <button
                   key={index}
                   onClick={() => paginate(index + 1)}
-                  className={`mx-1 px-4 py-2 border ${
+                  className={`mx-1 my-1 px-3 py-2 border ${
                     currentPage === index + 1
                       ? "bg-gradient-to-tr from-sky-900 to-slate-700 text-white"
                       : "bg-gray-200 text-gray-800"
-                  } rounded`}
+                  } rounded-md text-sm md:px-4 md:py-2`}
                 >
                   {index + 1}
                 </button>
@@ -160,7 +155,11 @@ const Products = () => {
           </div>
         </div>
       </div>
-    </div>
+      {/* Pdf section */}
+      <div className="mt-8">
+        <InfoPdf bgColor="bg-white" />
+      </div>
+    </section>
   );
 };
 

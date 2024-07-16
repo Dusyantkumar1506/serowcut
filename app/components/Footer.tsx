@@ -42,6 +42,7 @@ const Footer = () => {
                 width={192}
                 height={48}
                 className="w-48 h-auto"
+                unoptimized
               />
             </Link>
           </div>

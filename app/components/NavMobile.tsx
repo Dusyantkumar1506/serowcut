@@ -1,5 +1,6 @@
 import { RxCross1 } from "react-icons/rx";
 import React from "react";
+import Link from "next/link";
 
 interface Props {
   showNav: boolean;
@@ -10,14 +11,6 @@ const NavMobile = ({ showNav, closeNav }: Props) => {
   const navOpenStyle = showNav ? "translate-x-0" : "-translate-x-full";
   const overlayOpacity = showNav ? "opacity-70" : "opacity-0";
 
-  const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-      closeNav();
-    }
-  };
-
   return (
     <div>
       <div
@@ -27,49 +20,54 @@ const NavMobile = ({ showNav, closeNav }: Props) => {
         className={`text-white fixed flex items-center flex-col justify-center h-screen transform ${navOpenStyle} transition-transform duration-500 delay-300 w-4/5 bg-[#3172b3] space-y-14 z-[10006]`}
       >
         <li>
-          <a
-            className="nav__link text-[25px] sm:text-[30px]"
-            href="/"
-            onClick={() => scrollToSection("/")}
-          >
-            Home
-          </a>
+          <Link href="/">
+            <p
+              className="nav__link text-[25px] sm:text-[30px]"
+              onClick={closeNav}
+            >
+              Home
+            </p>
+          </Link>
         </li>
         <li>
-          <a
-            className="nav__link text-[25px] sm:text-[30px]"
-            href="about"
-            onClick={() => scrollToSection("about")}
-          >
-            About Us
-          </a>
+          <Link href="/about">
+            <p
+              className="nav__link text-[25px] sm:text-[30px]"
+              onClick={closeNav}
+            >
+              About Us
+            </p>
+          </Link>
         </li>
         <li>
-          <a
-            className="nav__link text-[25px] sm:text-[30px]"
-            href="services"
-            onClick={() => scrollToSection("services")}
-          >
-            Our Services
-          </a>
+          <Link href="/services">
+            <p
+              className="nav__link text-[25px] sm:text-[30px]"
+              onClick={closeNav}
+            >
+              Our Services
+            </p>
+          </Link>
         </li>
         <li>
-          <a
-            className="nav__link text-[25px] sm:text-[30px]"
-            href="products"
-            onClick={() => scrollToSection("products")}
-          >
-            Products
-          </a>
+          <Link href="/products">
+            <p
+              className="nav__link text-[25px] sm:text-[30px]"
+              onClick={closeNav}
+            >
+              Products
+            </p>
+          </Link>
         </li>
         <li>
-          <a
-            className="nav__link text-[25px] sm:text-[30px]"
-            href="contact"
-            onClick={() => scrollToSection("contact")}
-          >
-            Contact Us
-          </a>
+          <Link href="/contact">
+            <p
+              className="nav__link text-[25px] sm:text-[30px]"
+              onClick={closeNav}
+            >
+              Contact Us
+            </p>
+          </Link>
         </li>
 
         <RxCross1

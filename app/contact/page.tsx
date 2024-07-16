@@ -22,6 +22,7 @@ const Contact = () => {
             alt="Contact Banner"
             fill
             className="object-cover"
+            unoptimized
           />
           <div className="absolute inset-0 flex items-center justify-center text-center text-white">
             <h1 className="text-2xl md:text-5xl font-semibold">Contact us</h1>
@@ -47,8 +48,8 @@ const Contact = () => {
               GET IN TOUCH WITH US
             </h1>
             <p className="mt-4 text-gray-500">
-              Get in touch through any of the channels below. We're eager to
-              hear from you!
+              Get in touch through any of the channels below. We&apos;re eager
+              to hear from you!
             </p>
           </div>
 

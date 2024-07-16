@@ -44,7 +44,6 @@
   padding: 10px;
   font-size: 18px;
 }
-
 /* Product Category.css */
 .slider {
   width: 100%;
@@ -77,6 +76,9 @@
   width: 45px;
   height: 45px;
   cursor: pointer;
+}
+.info-card-shadow {
+  box-shadow: rgb(82, 141, 203) 0px 10px 30px -10px;
 }
 .arrow-right {
   margin-left: 10px;

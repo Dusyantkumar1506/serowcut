@@ -67,6 +67,7 @@ const About = () => {
                 alt="serowcut"
                 fill
                 className="absolute inset-0 rounded-xl object-cover"
+                unoptimized
               />
             </div>
 

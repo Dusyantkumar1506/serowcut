@@ -101,6 +101,7 @@ const ProductCarousel = () => {
                     alt={product.title}
                     fill
                     className="rounded-lg object-cover"
+                    unoptimized
                   />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-800">

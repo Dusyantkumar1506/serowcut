@@ -39,6 +39,7 @@ const WhySerowcut = () => {
                 src="/exlusive1.webp"
                 fill
                 className="rounded-xl object-cover"
+                unoptimized
               />
             </div>
             <div className="relative h-40 w-full sm:h-56 md:h-64 lg:h-80 xl:h-96 rounded-xl overflow-hidden">
@@ -47,6 +48,7 @@ const WhySerowcut = () => {
                 src="/serowcut-b1.webp"
                 fill
                 className="rounded-xl"
+                unoptimized
               />
             </div>
           </div>

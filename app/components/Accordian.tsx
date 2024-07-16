@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -54,6 +53,7 @@ const Accordion: React.FC = () => {
             width={400}
             height={400}
             className="object-contain  rounded-xl"
+            unoptimized
           />
         </div>
         <Link

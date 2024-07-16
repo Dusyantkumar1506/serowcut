@@ -3,7 +3,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-
+import Serowcut from "../../public/serowcut.png";
 interface Props {
   openNav: () => void;
 }
@@ -26,13 +26,6 @@ const Nav = ({ openNav }: Props) => {
     };
   }, []);
 
-  const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <nav
       className={`fixed w-[100%] bg-black transition-all duration-300 z-[1000]`}
@@ -40,58 +33,39 @@ const Nav = ({ openNav }: Props) => {
       <div className="flex items-center h-[12vh]  justify-between w-[90%] mx-auto">
         <Link href="/" className="font-logo text-white text-[18px]">
           <Image
-            src="/serowcut.png"
+            src={Serowcut}
             alt="logo"
             width={192}
             height={48}
             className="w-48 h-auto"
+            unoptimized
           />
         </Link>
         <ul className="md:flex hidden items-center space-x-10">
           <li>
-            <a
-              className="nav__link"
-              href="/"
-              onClick={() => scrollToSection("/")}
-            >
-              Home
-            </a>
+            <Link href="/">
+              <p className="nav__link">Home</p>
+            </Link>
           </li>
           <li>
-            <a
-              className="nav__link"
-              href="about"
-              onClick={() => scrollToSection("about")}
-            >
-              About Us
-            </a>
+            <Link href="/about">
+              <p className="nav__link">About Us</p>
+            </Link>
           </li>
           <li>
-            <a
-              className="nav__link"
-              href="services"
-              onClick={() => scrollToSection("services")}
-            >
-              Our Services
-            </a>
+            <Link href="/services">
+              <p className="nav__link">Our Services</p>
+            </Link>
           </li>
           <li>
-            <a
-              className="nav__link"
-              href="products"
-              onClick={() => scrollToSection("products")}
-            >
-              Products
-            </a>
+            <Link href="/products">
+              <p className="nav__link">Products</p>
+            </Link>
           </li>
           <li>
-            <a
-              className="nav__link"
-              href="contact"
-              onClick={() => scrollToSection("contact")}
-            >
-              Contact Us
-            </a>
+            <Link href="/contact">
+              <p className="nav__link">Contact Us</p>
+            </Link>
           </li>
         </ul>
         <RxHamburgerMenu

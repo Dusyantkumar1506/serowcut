@@ -15,7 +15,7 @@ export default function Home() {
       <Benefits />
       <WhySerowcut />
       <Carousel />
-      <InfoPdf />
+      <InfoPdf bgColor="bg-[#0b0c13]" />
     </div>
   );
 }

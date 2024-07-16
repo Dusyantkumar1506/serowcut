@@ -77,6 +77,7 @@ const Services = () => {
                       className="object-cover object-center"
                       src={service.imageSrc}
                       fill
+                      unoptimized
                     />
                   </div>
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
