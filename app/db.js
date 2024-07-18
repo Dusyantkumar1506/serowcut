@@ -100,7 +100,7 @@ const data = [
     category: "switches",
   },
   {
-    img: "/switch-btn.webp",
+    img: "/black-switch.webp",
     title: "Modular Switch",
     company: "Serowcut",
     category: "switches",
@@ -683,6 +683,55 @@ const data = [
     title: "PORCELAIN ENSHIELD (SPARE)",
     company: "Serowcut",
     category: "kitkat",
+  },
+  // cookerhoods-hobs
+  {
+    img: "/cooker-hood/cooker-hood1.webp",
+    title: "Kitchen chimney",
+    company: "Serowcut",
+    category: "cookerhoods-hobs",
+  },
+  {
+    img: "/cooker-hood/cooker-hood2.webp",
+    title: "Kitchen chimney",
+    company: "Serowcut",
+    category: "cookerhoods-hobs",
+  },
+  {
+    img: "/cooker-hood/cooker-hood3.webp",
+    title: "Kitchen chimney",
+    company: "Serowcut",
+    category: "cookerhoods-hobs",
+  },
+  {
+    img: "/cooker-hood/cooker-hood4.webp",
+    title: "Kitchen chimney",
+    company: "Serowcut",
+    category: "cookerhoods-hobs",
+  },
+  {
+    img: "/cooker-hood/cooker-hood5.webp",
+    title: "Kitchen chimney",
+    company: "Serowcut",
+    category: "cookerhoods-hobs",
+  },
+  {
+    img: "/cooker-hood/hobs.webp",
+    title: "3 Burner Hob",
+    company: "Serowcut",
+    category: "cookerhoods-hobs",
+  },
+  {
+    img: "/cooker-hood/hobs-2.webp",
+    title: "4 Burner Hob",
+    company: "Serowcut",
+    category: "cookerhoods-hobs",
+  },
+  {
+    img: "/cooker-hood/hobs-3.webp",
+    title: "3 Burner Hob",
+    company: "Serowcut",
+    category: "cookerhoods-hobs",
   },
 ];
 

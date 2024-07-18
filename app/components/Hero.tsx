@@ -28,7 +28,7 @@ const ImageSlider = () => {
 
   const slides = [
     {
-      img: "/switch.webp",
+      img: "/serowcut-banner.webp",
       text: "Switches and Sockets",
       width: 800,
       height: 600,

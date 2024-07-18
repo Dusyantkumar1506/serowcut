@@ -68,6 +68,7 @@ const Products = () => {
               <option value="fans">Fans</option>
               <option value="fan-box">Fan box</option>
               <option value="kitkat">Kitkat</option>
+              <option value="cookerhoods-hobs">Cooker hoods & Hobs</option>
               {/* Add more categories */}
             </select>
           </div>

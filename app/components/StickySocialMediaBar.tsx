@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 
 const StickySocialMediaBar = () => {
+  const whatsappNumber = "+919370000038";
   return (
     <div className="fixed top-1/2 transform -translate-y-1/2 right-0  p-2 bg-gray-800 rounded-l-lg">
       <ul className="space-y-4">
@@ -43,7 +44,7 @@ const StickySocialMediaBar = () => {
         </li>
         <li className="group relative">
           <Link
-            href="https://wa.me/"
+            href={`https://wa.me/${whatsappNumber}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-green-500"

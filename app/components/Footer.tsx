@@ -9,6 +9,7 @@ import Image from "next/image";
 const Footer = () => {
   const emailAddress = "serowcut@gmail.com";
   const phoneNumber = "+919370000038";
+  const developerNo = "+917988064796";
 
   const socialLinks = [
     {
@@ -124,6 +125,14 @@ const Footer = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="mt-[1.4rem] text-base text-white flex justify-center items-center">
+        <Link href={`https://wa.me/${developerNo}`} target="_blank">
+          <p>
+            Design & Developed by{" "}
+            <span className="text-[#3172b3] underline">Dusyant kumar</span>
+          </p>
+        </Link>
       </div>
     </footer>
   );
