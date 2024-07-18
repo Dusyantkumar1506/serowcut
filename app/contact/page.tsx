@@ -110,7 +110,7 @@ const Contact = () => {
       <section className="md:pt-[5rem] pt-[1rem]">
         <iframe
           className="w-full md:h-[60vh] object-cover h-[40vh]"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3426.6237998442894!2d76.91554787386247!3d30.813182581743227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f8d184ce38c95%3A0xa4909b426b552bc6!2sApna%20showroom!5e0!3m2!1sen!2sin!4v1719899039200!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d940.7839612521009!2d72.86130649021308!3d19.406535671173554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDI0JzIzLjIiTiA3MsKwNTEnNDMuMSJF!5e0!3m2!1sen!2sin!4v1721306197380!5m2!1sen!2sin"
           style={{ border: "0" }}
           allowFullScreen={true}
           loading="lazy"

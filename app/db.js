@@ -229,6 +229,30 @@ const data = [
     company: "Serowcut",
     category: "wires",
   },
+  {
+    img: "/wires/wire-3.webp",
+    title: "Serowcut Wire 1.0 sq.mm",
+    company: "Serowcut",
+    category: "wires",
+  },
+  {
+    img: "/wires/wire-4.webp",
+    title: "Serowcut Wire 1.5 sq.mm",
+    company: "Serowcut",
+    category: "wires",
+  },
+  {
+    img: "/wires/wire-3.webp",
+    title: "Serowcut Wire 2.5 sq.mm",
+    company: "Serowcut",
+    category: "wires",
+  },
+  {
+    img: "/wires/wire2.webp",
+    title: "Serowcut Wire and Cables",
+    company: "Serowcut",
+    category: "wires",
+  },
   // module box
   {
     img: "/modulebox/MODULE BOX.webp",
@@ -710,6 +734,24 @@ const data = [
     category: "cookerhoods-hobs",
   },
   {
+    img: "/cooker-hood/kitchen-chimney6.webp",
+    title: "Kitchen chimney New 3D plus model ",
+    company: "Serowcut",
+    category: "cookerhoods-hobs",
+  },
+  {
+    img: "/cooker-hood/kitchen-chinmey7.webp",
+    title: "Kitchen chimney New 3D plus model",
+    company: "Serowcut",
+    category: "cookerhoods-hobs",
+  },
+  {
+    img: "/cooker-hood/kitchen-chimney8.webp",
+    title: "Kitchen chimney platinum",
+    company: "Serowcut",
+    category: "cookerhoods-hobs",
+  },
+  {
     img: "/cooker-hood/cooker-hood5.webp",
     title: "Kitchen chimney",
     company: "Serowcut",
@@ -723,6 +765,12 @@ const data = [
   },
   {
     img: "/cooker-hood/hobs-2.webp",
+    title: "4 Burner Hob",
+    company: "Serowcut",
+    category: "cookerhoods-hobs",
+  },
+  {
+    img: "/cooker-hood/hobs-4.webp",
     title: "4 Burner Hob",
     company: "Serowcut",
     category: "cookerhoods-hobs",
