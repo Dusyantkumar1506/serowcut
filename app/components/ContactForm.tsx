@@ -86,6 +86,7 @@ const ContactForm: React.FC = () => {
             value={formData.email}
             onChange={handleChange}
             placeholder="Your Email"
+            required
             className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm bg-gray-100"
           />
         </div>
@@ -96,6 +97,7 @@ const ContactForm: React.FC = () => {
             value={formData.subject}
             onChange={handleChange}
             placeholder="Subject"
+            required
             className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm bg-gray-100"
           />
         </div>
@@ -105,6 +107,7 @@ const ContactForm: React.FC = () => {
             value={formData.message}
             onChange={handleChange}
             placeholder="Your Message"
+            required
             className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm bg-gray-100"
           />
         </div>
