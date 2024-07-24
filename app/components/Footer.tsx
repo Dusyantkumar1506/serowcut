@@ -126,7 +126,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="mt-[1.4rem] text-base text-white flex justify-center items-center">
+      <div className="mt-[1.4rem] w-[90%] mx-auto text-sm text-white">
         <Link href={`https://wa.me/${developerNo}`} target="_blank">
           <p>
             Design & Developed by{" "}
