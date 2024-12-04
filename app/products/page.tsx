@@ -14,7 +14,6 @@ const Products = () => {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const productsPerPage = 12;
   const emailAddress = "serowcut@gmail.com";
-  const phoneNumber = "+919370000038";
 
   const filteredProducts = data.filter((product) => {
     return (
@@ -77,11 +76,6 @@ const Products = () => {
               <p className="mb-1">
                 PERFECT ENTERPRISES A1, BUILDING NO.1, GALA NO.110 OM INDUSTRIAL
                 ESTATE WALIV VASIA (EAST)- 4011208
-              </p>
-              <p>
-                <Link href={`tel:${phoneNumber}`} className="text-base">
-                  {phoneNumber}
-                </Link>
               </p>
               <p>
                 <Link href={`mailto:${emailAddress}`} className="text-base">

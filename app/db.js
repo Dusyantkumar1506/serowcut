@@ -710,6 +710,18 @@ const data = [
   },
   // cookerhoods-hobs
   {
+    img: "/cooker-hood/gold-cooktop.webp",
+    title: "Gold Infrared Cooktop",
+    company: "Serowcut",
+    category: "cookerhoods-hobs",
+  },
+  {
+    img: "/cooker-hood/titanium-black-hood.webp",
+    title: "Titanium Black Hood",
+    company: "Serowcut",
+    category: "cookerhoods-hobs",
+  },
+  {
     img: "/cooker-hood/cooker-hood1.webp",
     title: "Kitchen chimney",
     company: "Serowcut",

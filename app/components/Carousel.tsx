@@ -19,6 +19,15 @@ const products = [
     image: "/switch-socket1.webp",
   },
   {
+    title: "Gold Infrared Cooktop",
+    image: "/cooker-hood/gold-cooktop.webp",
+  },
+  {
+    title: "Titanium Black Hood",
+    image: "/cooker-hood/titanium-black-hood.webp",
+  },
+
+  {
     title: "KITKAT FUSE UNITS",
     image: "/kitkat/REGULAR KITKAT FUSE UNITS.webp",
   },

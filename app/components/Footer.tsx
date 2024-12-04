@@ -94,15 +94,6 @@ const Footer = () => {
               {emailAddress}
             </Link>
           </div>
-          <div className="flex items-center mt-[1rem] space-x-2">
-            <FaPhoneAlt className="w-[1rem] h-[1rem] text-[#3172b3]" />
-            <Link
-              href={`tel:${phoneNumber}`}
-              className="text-[17px] font-normal text-white opacity-75"
-            >
-              {phoneNumber}
-            </Link>
-          </div>
         </div>
       </div>
       <div className="mt-[1.4rem] w-[90%] mx-auto text-white opacity-70 flex justify-between items-center">

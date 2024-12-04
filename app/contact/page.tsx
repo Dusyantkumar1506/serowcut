@@ -1,5 +1,5 @@
 import React from "react";
-import { BsTelephonePlus } from "react-icons/bs";
+import { IoLogoWhatsapp } from "react-icons/io";
 import { MdOutlineMarkEmailRead } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { IoLogoInstagram } from "react-icons/io5";
@@ -11,7 +11,7 @@ import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   const emailAddress = "serowcut@gmail.com";
-  const phoneNumber = "+919370000038";
+  const whatsappNumber = "919370000038";
 
   return (
     <div className="overflow-hidden ">
@@ -56,12 +56,15 @@ const Contact = () => {
           <div className="flex flex-col gap-4 pt-10">
             <div className="flex gap-6">
               <div className="bg-[#3172b3] rounded-full w-16 h-16 flex items-center justify-center">
-                <BsTelephonePlus className="w-6 h-6" color="white" />
+                <IoLogoWhatsapp className="w-6 h-6" color="white" />
               </div>
               <div className="flex justify-center flex-col">
-                <h1 className="font-semibold text-lg">Have any question?</h1>
-                <Link href={`tel:${phoneNumber}`} className="text-base">
-                  {phoneNumber}
+                <h1 className="font-semibold text-lg">Chat with us</h1>
+                <Link
+                  href={`https://wa.me/${whatsappNumber}`}
+                  className="text-base"
+                >
+                  Start WhatsApp Chat
                 </Link>
               </div>
             </div>
