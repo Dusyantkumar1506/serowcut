@@ -6,6 +6,7 @@ import Image from "next/image";
 
 const ImageSlider = () => {
   const settings = {
+    arrows: false, // Ensure no slick default arrows
     dots: false,
     infinite: true,
     speed: 1000,
@@ -60,29 +61,33 @@ const ImageSlider = () => {
   ];
 
   return (
-    <Slider
-      className="image-slider pt-[5rem] pb-[1rem] sm:pt-[4rem] sm:pb-5 bg-[#0b0c13]"
-      {...settings}
-    >
-      {slides.map((slide, index) => (
-        <div key={index} className="relative">
-          <Image
-            src={slide.img}
-            alt={`Slide ${index + 1}`}
-            width={slide.width}
-            height={slide.height}
-            loading={index === 0 ? "eager" : "lazy"}
-            priority={index === 0}
-            className="w-full h-auto sm:h-96 object-cover"
-            style={{ maxHeight: "calc(100vh - 200px)" }}
-            unoptimized
-          />
-          <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-opacity-50 text-lg sm:text-3xl px-6 sm:px-10 font-semibold text-white p-2">
-            {slide.text}
-          </div>
-        </div>
-      ))}
-    </Slider>
+    <section className="w-full bg-[#0b0c13]">
+      <div className="max-w-screen-xl mx-auto px-0 ">
+        <Slider
+          className="image-slider pt-[5rem] pb-[1rem] sm:pt-[4rem] sm:pb-5"
+          {...settings}
+        >
+          {slides.map((slide, index) => (
+            <div key={index} className="relative w-full">
+              <Image
+                src={slide.img}
+                alt={`Slide ${index + 1}`}
+                width={slide.width}
+                height={slide.height}
+                loading={index === 0 ? "eager" : "lazy"}
+                priority={index === 0}
+                className="w-full h-auto sm:h-96 object-cover"
+                style={{ maxHeight: "calc(100vh - 200px)" }}
+                unoptimized
+              />
+              <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-opacity-50 text-lg sm:text-3xl px-6 sm:px-10 font-semibold text-white p-2">
+                {slide.text}
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </section>
   );
 };
 

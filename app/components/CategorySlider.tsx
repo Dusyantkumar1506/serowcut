@@ -56,13 +56,14 @@ const CategorySlider = () => {
   const sliderRef = useRef<Slider | null>(null);
 
   const settings = {
+    arrows: false,
     dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1000,
     beforeChange: (current: number, next: number) => setSlideIndex(next),
     centerMode: true,
     responsive: [
@@ -84,47 +85,51 @@ const CategorySlider = () => {
   };
 
   return (
-    <div className="container mx-auto py-8 bg-[#0b0c13] text-white pb-16 relative">
-      <h2 className="text-center font-bold text-3xl mb-10">
-        Our{" "}
-        <span className="bg-gradient-to-b from-sky-600 to-slate-700 bg-clip-text text-transparent">
-          Product Category
-        </span>
-      </h2>
-      <div className="slider relative">
-        <Slider ref={sliderRef} {...settings}>
-          {productsCategory.map((product, index) => (
+    <section className="w-full bg-[#0b0c13] text-white py-8 pb-16">
+      <div className="max-w-screen-xl mx-auto px-4">
+        <h2 className="text-center font-bold text-3xl mb-10">
+          Our{" "}
+          <span className="bg-gradient-to-b from-sky-600 to-slate-700 bg-clip-text text-transparent">
+            Product Category
+          </span>
+        </h2>
+        <div className="slider relative">
+          <Slider ref={sliderRef} {...settings}>
+            {productsCategory.map((product, index) => (
+              <div
+                key={product.id}
+                className={`slide ${
+                  index === slideIndex ? "slide-active" : ""
+                }`}
+              >
+                <Image
+                  src={product.image}
+                  alt="Product category"
+                  width={product.width}
+                  height={product.height}
+                  className="mx-auto"
+                  unoptimized
+                />
+              </div>
+            ))}
+          </Slider>
+          <div className="flex justify-center gap-4 mt-8">
             <div
-              key={product.id}
-              className={`slide ${index === slideIndex ? "slide-active" : ""}`}
+              className="arrow arrow-left bg-gray-100 text-gray-700 hover:bg-[#3172b3] hover:text-white p-2 mx-2 rounded-full cursor-pointer"
+              onClick={() => sliderRef.current?.slickPrev()}
             >
-              <Image
-                src={product.image}
-                alt="Product category"
-                width={product.width}
-                height={product.height}
-                className="mx-auto"
-                unoptimized
-              />
+              <FaLongArrowAltLeft />
             </div>
-          ))}
-        </Slider>
-        <div className="flex justify-center gap-4 mt-8">
-          <div
-            className="arrow arrow-left bg-gray-100 text-gray-700 hover:bg-[#3172b3] hover:text-white p-2 mx-2 rounded-full cursor-pointer"
-            onClick={() => sliderRef.current?.slickPrev()}
-          >
-            <FaLongArrowAltLeft />
-          </div>
-          <div
-            className="arrow arrow-right bg-gray-100 text-gray-700 hover:bg-[#3172b3] hover:text-white p-2 mx-2 rounded-full cursor-pointer"
-            onClick={() => sliderRef.current?.slickNext()}
-          >
-            <FaLongArrowAltRight />
+            <div
+              className="arrow arrow-right bg-gray-100 text-gray-700 hover:bg-[#3172b3] hover:text-white p-2 mx-2 rounded-full cursor-pointer"
+              onClick={() => sliderRef.current?.slickNext()}
+            >
+              <FaLongArrowAltRight />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

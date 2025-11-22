@@ -44,50 +44,54 @@ const Accordion: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row p-4">
-      <div className="md:w-1/3 flex flex-col items-center md:items-start mb-4 md:mb-0 md:mr-8">
-        <div className="w-full h-auto mb-4 relative ">
-          <Image
-            src="/serowcut-map.webp"
-            alt="Serowcut Products"
-            width={400}
-            height={400}
-            className="object-contain  rounded-xl"
-            unoptimized
-          />
-        </div>
-        <Link
-          href="/contact"
-          className="service-btn bg-[#3172b3] hover:bg-[#215c97] text-white py-2 px-4 rounded"
-        >
-          Contact Us
-        </Link>
-      </div>
-      <div className="md:w-2/3">
-        {accordionData.map((item, index) => (
-          <div className="py-2" key={index}>
-            <h2 onClick={() => handleAccordionClick(index)}>
-              <button
-                className={`w-full text-left p-4 font-semibold border rounded-2xl transition-colors duration-300 ${
-                  index === activeIndex
-                    ? "bg-[#3172b3] hover:bg-[#215c97] text-white"
-                    : "bg-gray-200 text-gray-900"
-                }`}
-                type="button"
-                aria-expanded={index === activeIndex}
-              >
-                {item.title}
-              </button>
-            </h2>
-            {index === activeIndex && (
-              <div className="p-4 bg-gray-100 border-l-2 border-[#3172b3] rounded-2xl">
-                <p className="text-gray-800">{item.content}</p>
-              </div>
-            )}
+    <section className="w-full bg-[#0b0c13] py-10">
+      <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row px-4 gap-x-8">
+        {/* Left image and contact */}
+        <div className="md:w-1/3 flex flex-col items-center md:items-start mb-6 md:mb-0">
+          <div className="w-full h-auto mb-4 relative">
+            <Image
+              src="/serowcut-map.webp"
+              alt="Serowcut Products"
+              width={400}
+              height={400}
+              className="object-contain rounded-xl"
+              unoptimized
+            />
           </div>
-        ))}
+          <Link
+            href="/contact"
+            className="service-btn bg-[#3172b3] hover:bg-[#215c97] text-white py-2 px-4 rounded mt-2"
+          >
+            Contact Us
+          </Link>
+        </div>
+        {/* Accordion */}
+        <div className="md:w-2/3">
+          {accordionData.map((item, index) => (
+            <div className="py-2" key={index}>
+              <h2 onClick={() => handleAccordionClick(index)}>
+                <button
+                  className={`w-full text-left p-4 font-semibold border rounded-2xl transition-colors duration-300 ${
+                    index === activeIndex
+                      ? "bg-[#3172b3] hover:bg-[#215c97] text-white"
+                      : "bg-gray-200 text-gray-900"
+                  }`}
+                  type="button"
+                  aria-expanded={index === activeIndex}
+                >
+                  {item.title}
+                </button>
+              </h2>
+              {index === activeIndex && (
+                <div className="p-4 bg-gray-100 border-l-2 border-[#3172b3] rounded-2xl">
+                  <p className="text-gray-800">{item.content}</p>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

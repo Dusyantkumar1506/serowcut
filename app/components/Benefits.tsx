@@ -11,32 +11,32 @@ import { TbPaywall } from "react-icons/tb";
 const Benefits = () => {
   const benefitsData = [
     {
-      icon: <MdOutlineShoppingCart size={40} color="" />,
+      icon: <MdOutlineShoppingCart size={40} className="text-sky-400" />,
       title: "One Stop Shop",
       description: "Wide product range",
     },
     {
-      icon: <VscWorkspaceTrusted size={40} />,
+      icon: <VscWorkspaceTrusted size={40} className="text-sky-500" />,
       title: "Most trusted Brands",
       description: "Best in class products",
     },
     {
-      icon: <FaHandHoldingUsd size={40} />,
+      icon: <FaHandHoldingUsd size={40} className="text-green-400" />,
       title: "Great value for Money",
       description: "Competitive prices",
     },
     {
-      icon: <FaRegSmileBeam size={40} />,
+      icon: <FaRegSmileBeam size={40} className="text-yellow-400" />,
       title: "Shop with Satisfaction",
       description: "Friendly customer service",
     },
     {
-      icon: <TbPaywall size={40} />,
+      icon: <TbPaywall size={40} className="text-purple-400" />,
       title: "Secure Transactions",
       description: "100% secured payment",
     },
     {
-      icon: <FaShippingFast size={40} />,
+      icon: <FaShippingFast size={40} className="text-red-400" />,
       title: "Secure Shipment",
       description: "Safe & timely shipping",
     },
@@ -45,7 +45,7 @@ const Benefits = () => {
   return (
     <section className="bg-[#0b0c13] text-white">
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-        <div className="mx-auto max-w-lg text-center">
+        <div className="mx-auto max-w-xl text-center">
           <h2 className="text-3xl font-bold sm:text-4xl">
             Why Choose{" "}
             <span className="bg-gradient-to-b from-sky-600 to-slate-700 bg-clip-text text-transparent">
@@ -54,13 +54,12 @@ const Benefits = () => {
             ?
           </h2>
           <p className="mt-4 text-gray-300">
-            At Serowcut, enjoy top-quality products, competitive prices, secure
-            transactions, and exceptional customer service. Choose us for a
-            seamless shopping experience.
+            Serowcut offers quality products, great prices, secure transactions,
+            and outstanding customer care.
           </p>
         </div>
 
-        <div className="mt-8 grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6 rounded-2xl">
+        <div className="mt-8 grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-6 rounded-2xl">
           {benefitsData.map((item, index) => (
             <div
               key={index}

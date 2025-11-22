@@ -13,6 +13,18 @@ const data = [
     category: "switches",
   },
   {
+    img: "/Key-Tag-Switch-1.webp",
+    title: "Key Tag Switch",
+    company: "Serowcut",
+    category: "switches",
+  },
+  {
+    img: "/Key-Tag-Switch-2.webp",
+    title: "Key Tag Switch",
+    company: "Serowcut",
+    category: "switches",
+  },
+  {
     img: "/switch9.webp",
     title: "Modular Plate",
     company: "Serowcut",
@@ -24,7 +36,6 @@ const data = [
     company: "Serowcut",
     category: "switches",
   },
-
   {
     img: "/switch12.webp",
     title: "Evo 5 Step Regulator",
@@ -165,14 +176,32 @@ const data = [
     company: "Serowcut",
     category: "switches",
   },
+
+  {
+    img: "/Single-Switch-1.webp",
+    title: "Single Switch",
+    company: "Serowcut",
+    category: "switches",
+  },
+  {
+    img: "/single-switch.webp",
+    title: "Single Switch",
+    company: "Serowcut",
+    category: "switches",
+  },
   // socket and switches
+  {
+    img: "/3-pin-With-Switch.webp",
+    title: "3 Pin With Switch",
+    company: "Serowcut",
+    category: "sockets&switches",
+  },
   {
     img: "/switch-socket1.webp",
     title: "6a Cubes series switches",
     company: "Serowcut",
     category: "sockets&switches",
   },
-
   {
     img: "/switch-socket3.webp",
     title: "6a Cubes series switches",
@@ -209,6 +238,7 @@ const data = [
     company: "Serowcut",
     category: "sockets&switches",
   },
+
   // sockets
   {
     img: "/socket1.webp",
@@ -222,6 +252,105 @@ const data = [
     company: "Serowcut",
     category: "sockets",
   },
+  {
+    img: "/3-pin-socket.webp",
+    title: "3 Pin Socket",
+    company: "Serowcut",
+    category: "sockets",
+  },
+  {
+    img: "/3-pin-socket2.webp",
+    title: "3 Pin Socket",
+    company: "Serowcut",
+    category: "sockets",
+  },
+  {
+    img: "/3-pin-socket-3.webp",
+    title: "3 Pin Socket",
+    company: "Serowcut",
+    category: "sockets",
+  },
+
+  {
+    img: "/plug.webp",
+    title: "Plug",
+    company: "Serowcut",
+    category: "sockets",
+  },
+  {
+    img: "/plug-male-female.webp",
+    title: "Plug Male Female",
+    company: "Serowcut",
+    category: "sockets",
+  },
+  // switch boards
+  {
+    img: "/switchboards/Switch-Board-1.webp",
+    title: "Switch Board",
+    company: "Serowcut",
+    category: "switchboards",
+  },
+  {
+    img: "/switchboards/Switch-Board-2.webp",
+    title: "Switch Board",
+    company: "Serowcut",
+    category: "switchboards",
+  },
+  {
+    img: "/switchboards/Switch-Board-3.webp",
+    title: "Switch Board",
+    company: "Serowcut",
+    category: "switchboards",
+  },
+  {
+    img: "/switchboards/Switch-Board-4.webp",
+    title: "Switch Board",
+    company: "Serowcut",
+    category: "switchboards",
+  },
+  {
+    img: "/switchboards/Switch-Board-5.webp",
+    title: "Switch Board",
+    company: "Serowcut",
+    category: "switchboards",
+  },
+  {
+    img: "/switchboards/Switch-Board-6.webp",
+    title: "Switch Board",
+    company: "Serowcut",
+    category: "switchboards",
+  },
+  {
+    img: "/switchboards/Switch-Board-7.webp",
+    title: "Switch Board",
+    company: "Serowcut",
+    category: "switchboards",
+  },
+  {
+    img: "/switchboards/Switch-Board-8.webp",
+    title: "Switch Board",
+    company: "Serowcut",
+    category: "switchboards",
+  },
+  {
+    img: "/switchboards/Switch-Board-9.webp",
+    title: "Switch Board",
+    company: "Serowcut",
+    category: "switchboards",
+  },
+  {
+    img: "/switchboards/Switch-Board-10.webp",
+    title: "Switch Board",
+    company: "Serowcut",
+    category: "switchboards",
+  },
+  {
+    img: "/switchboards/Switch-Board-11.webp",
+    title: "Switch Board",
+    company: "Serowcut",
+    category: "switchboards",
+  },
+
   // wires
   {
     img: "/wires/wire1.webp",
@@ -252,6 +381,63 @@ const data = [
     title: "Serowcut Wire and Cables",
     company: "Serowcut",
     category: "wires",
+  },
+
+  {
+    img: "/wires/wire-green.webp",
+    title: "Serowcut Wire .75 mm",
+    company: "Serowcut",
+    category: "wires",
+  },
+  {
+    img: "/wires/wire-1.5red.webp",
+    title: "Serowcut Wire 1.5 mm",
+    company: "Serowcut",
+    category: "wires",
+  },
+  {
+    img: "/wires/wire-blue.webp",
+    title: "Serowcut Wire 1 mm",
+    company: "Serowcut",
+    category: "wires",
+  },
+  {
+    img: "/wires/wire-black.webp",
+    title: "Serowcut Wire 4 mm",
+    company: "Serowcut",
+    category: "wires",
+  },
+  {
+    img: "/wires/wire-2.5red.webp",
+    title: "Serowcut Wire 2.5 mm",
+    company: "Serowcut",
+    category: "wires",
+  },
+
+  // bulb holder
+  {
+    img: "/bulbholder/Bulb-Holder-1.webp",
+    title: "Bulb Holder",
+    company: "Serowcut",
+    category: "bulbholder",
+  },
+  {
+    img: "/bulbholder/Bulb-Holder-2.webp",
+    title: "Bulb Holder",
+    company: "Serowcut",
+    category: "bulbholder",
+  },
+  {
+    img: "/bulbholder/Bulb-Holder-3.webp",
+    title: "Bulb Holder",
+    company: "Serowcut",
+    category: "bulbholder",
+  },
+  {
+    img: "/bulbholder/Bulb-Holder-4.webp",
+    title: "Bulb Holder",
+    company: "Serowcut",
+    category: "bulbholder",
   },
   // module box
   {
@@ -288,6 +474,19 @@ const data = [
   {
     img: "/modulebox/MODULE BOX PLATINUM RANGE.webp",
     title: " MODULE BOX PLATINUM RANGE",
+    company: "Serowcut",
+    category: "modulebox",
+  },
+
+  {
+    img: "/modulebox/modulebox1.webp",
+    title: " MODULE BOX RANGE",
+    company: "Serowcut",
+    category: "modulebox",
+  },
+  {
+    img: "/modulebox/modulebox2.webp",
+    title: " MODULE BOX RANGE",
     company: "Serowcut",
     category: "modulebox",
   },
@@ -382,6 +581,24 @@ const data = [
     company: "Serowcut",
     category: "ledlights",
   },
+  {
+    img: "/led-lights/Light-30W.webp",
+    title: "Light 30W",
+    company: "Serowcut",
+    category: "ledlights",
+  },
+  {
+    img: "/led-lights/Light-50W.webp",
+    title: "Light 50W",
+    company: "Serowcut",
+    category: "ledlights",
+  },
+  {
+    img: "/led-lights/Light-100W.webp",
+    title: "Light 100W",
+    company: "Serowcut",
+    category: "ledlights",
+  },
   // change overs
   {
     img: "/change-overs/AUTOMATIC CHANGE OVERS.webp",
@@ -453,6 +670,37 @@ const data = [
   },
 
   // MCB DISTRIBUTION BOXES
+
+  {
+    img: "/mcb-boxes/MCB-BOX-2.webp",
+    title: "MCB BOXES",
+    company: "Serowcut",
+    category: "mcb-boxes",
+  },
+  {
+    img: "/mcb-boxes/MCB-BOX-3.webp",
+    title: "MCB BOXES",
+    company: "Serowcut",
+    category: "mcb-boxes",
+  },
+  {
+    img: "/mcb-boxes/MCB-BOX-4.webp",
+    title: "MCB SPN BOXES",
+    company: "Serowcut",
+    category: "mcb-boxes",
+  },
+  {
+    img: "/mcb-boxes/MCB-BOX-5.webp",
+    title: "MCB SPN BOXES",
+    company: "Serowcut",
+    category: "mcb-boxes",
+  },
+  {
+    img: "/mcb-boxes/MCB-switch.webp",
+    title: "MCB Switch",
+    company: "Serowcut",
+    category: "mcb-boxes",
+  },
   {
     img: "/mcb-boxes/SPN MCB DISTRIBUTION BOXES.webp",
     title: "SPN MCB DISTRIBUTION BOXES",
@@ -620,6 +868,19 @@ const data = [
     company: "Serowcut",
     category: "fan-box",
   },
+
+  {
+    img: "/fan-box/fan-box1.webp",
+    title: "FAN BOX",
+    company: "Serowcut",
+    category: "fan-box",
+  },
+  {
+    img: "/fan-box/fan-box2.webp",
+    title: "FAN BOX DRAW RANGE",
+    company: "Serowcut",
+    category: "fan-box",
+  },
   {
     img: "/fan-box/VENTOGUARD.webp",
     title: "VENTOGUARD",
@@ -663,6 +924,24 @@ const data = [
     company: "Serowcut",
     category: "fan-box",
   },
+  {
+    img: "/fan-box/Fan-h-1.webp",
+    title: "Fan",
+    company: "Serowcut",
+    category: "fan-box",
+  },
+  {
+    img: "/fan-box/Fan-2.webp",
+    title: "Fan",
+    company: "Serowcut",
+    category: "fan-box",
+  },
+  {
+    img: "/fan-box/Fan-3.webp",
+    title: "Fan",
+    company: "Serowcut",
+    category: "fan-box",
+  },
   // Room warmer
   {
     img: "/warmer/ROOM WARMER MENDAK.webp",
@@ -689,6 +968,31 @@ const data = [
     category: "warmer",
   },
 
+  // geyser
+  {
+    img: "/geyser/geyser-1.webp",
+    title: "Geyser",
+    company: "Serowcut",
+    category: "geyser",
+  },
+  {
+    img: "/geyser/geyser-2.webp",
+    title: "Geyser",
+    company: "Serowcut",
+    category: "geyser",
+  },
+  {
+    img: "/geyser/geyser-3.webp",
+    title: "Geyser",
+    company: "Serowcut",
+    category: "geyser",
+  },
+  {
+    img: "/geyser/geyser-4.webp",
+    title: "Geyser",
+    company: "Serowcut",
+    category: "geyser",
+  },
   // Kitkat
   {
     img: "/kitkat/PREMIUM KITKAT FUSE UNITS.webp",
@@ -707,6 +1011,14 @@ const data = [
     title: "PORCELAIN ENSHIELD (SPARE)",
     company: "Serowcut",
     category: "kitkat",
+  },
+
+  // battery
+  {
+    img: "/battery/battery.webp",
+    title: "Serowcut Battery",
+    company: "Serowcut",
+    category: "battery",
   },
   // cookerhoods-hobs
   {
@@ -790,6 +1102,30 @@ const data = [
   {
     img: "/cooker-hood/hobs-3.webp",
     title: "3 Burner Hob",
+    company: "Serowcut",
+    category: "cookerhoods-hobs",
+  },
+  {
+    img: "/cooker-hood/4-Burner-Hob.webp",
+    title: "4 Burner Hob",
+    company: "Serowcut",
+    category: "cookerhoods-hobs",
+  },
+  {
+    img: "/cooker-hood/2burner-stove.webp",
+    title: "2 Burner Stove",
+    company: "Serowcut",
+    category: "cookerhoods-hobs",
+  },
+  {
+    img: "/cooker-hood/3burner-stove.webp",
+    title: "3 Burner Stove",
+    company: "Serowcut",
+    category: "cookerhoods-hobs",
+  },
+  {
+    img: "/cooker-hood/induction-cooktop.webp",
+    title: "Induction Cooktop",
     company: "Serowcut",
     category: "cookerhoods-hobs",
   },

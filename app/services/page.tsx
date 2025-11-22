@@ -50,8 +50,8 @@ const servicesData = [
 const Services = () => {
   return (
     <div className="overflow-hidden bg-[#0b0c13]">
-      <section className="text-gray-400 body-font pt-20">
-        <div className="container px-5 py-20 mx-auto">
+      <section className="w-full bg-[#0b0c13] text-gray-400 body-font pt-20">
+        <div className="max-w-screen-xl mx-auto px-4 py-20">
           <div className="flex flex-col text-center w-full mb-16">
             <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-white">
               Our{" "}
@@ -95,21 +95,23 @@ const Services = () => {
           </div>
         </div>
       </section>
+
       {/* video */}
-      <section className="mt-8 pb-10">
-        <div className="relative w-full h-64 md:h-96 overflow-hidden">
-          <iframe
-            src="https://www.youtube.com/embed/DU-x6eLFYKc?autoplay=1&mute=1&loop=1&playlist=DU-x6eLFYKc&controls=0&showinfo=0&modestbranding=1&rel=0&iv_load_policy=3&fs=0&disablekb=1&playsinline=1"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-            className="absolute inset-0 w-full h-full object-cover"
-          />
+      <section className="w-full bg-[#0b0c13] mt-8 pb-10">
+        <div className="max-w-screen-xl mx-auto ">
+          <div className="relative w-full h-64 md:h-96 overflow-hidden rounded-xl">
+            <iframe
+              src="https://www.youtube.com/embed/DU-x6eLFYKc?autoplay=1&mute=1&loop=1&playlist=DU-x6eLFYKc&controls=0&showinfo=0&modestbranding=1&rel=0&iv_load_policy=3&fs=0&disablekb=1&playsinline=1"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
         </div>
       </section>
-
       <section>
         <Accordion />
       </section>

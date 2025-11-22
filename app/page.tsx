@@ -7,6 +7,7 @@ import WhySerowcut from "./components/WhySerowcut";
 import Carousel from "./components/Carousel";
 import CategorySlider from "./components/CategorySlider";
 import NewArrival from "./components/NewArrival";
+import ArrivalTabs from "./components/ArrivalTabs";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Benefits />
       <WhySerowcut />
       <NewArrival />
+      <ArrivalTabs />
       <Carousel />
       <InfoPdf bgColor="bg-[#0b0c13]" />
     </div>

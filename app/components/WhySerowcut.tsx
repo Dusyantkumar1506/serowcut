@@ -4,8 +4,8 @@ import React from "react";
 
 const WhySerowcut = () => {
   return (
-    <section>
-      <div className="bg-[#0b0c13] mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8">
+    <section className="bg-[#0b0c13] w-full">
+      <div className="max-w-screen-xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <div className="bg-gradient-to-tr from-sky-900 to-slate-700 p-8 md:p-12 lg:px-10 lg:py-10 rounded-xl">
             <div className="mx-auto max-w-xl text-center">

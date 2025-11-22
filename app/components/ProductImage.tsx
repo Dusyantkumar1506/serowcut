@@ -7,12 +7,12 @@ interface ProductImageProps {
 
 const ProductImage: React.FC<ProductImageProps> = ({ src, alt }) => {
   return (
-    <div className="relative w-full h-48">
+    <div className="relative w-full h-48 overflow-hidden rounded-xl">
       <Image
         src={src}
         alt={alt}
         fill
-        className="rounded object-contain"
+        className="object-contain transition-transform duration-300 ease-out hover:scale-110"
         loading="lazy"
         unoptimized
       />
