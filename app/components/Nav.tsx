@@ -30,7 +30,7 @@ const Nav = ({ openNav }: Props) => {
     <nav
       className={`fixed w-[100%] bg-black transition-all duration-300 z-[1000]`}
     >
-      <div className="flex items-center h-[12vh]  justify-between w-[90%] mx-auto">
+      <div className="flex items-center h-[12vh]  justify-between max-w-screen-xl px-8 mx-auto">
         <Link href="/" className="font-logo text-white text-[18px]">
           <Image
             src={Serowcut}

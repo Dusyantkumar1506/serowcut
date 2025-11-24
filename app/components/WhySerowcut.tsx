@@ -36,7 +36,7 @@ const WhySerowcut = () => {
             <div className="relative h-40 w-full sm:h-56 md:h-64 lg:h-80 xl:h-96 rounded-xl overflow-hidden">
               <Image
                 alt="switch"
-                src="/exlusive1.webp"
+                src="/whyserowcut1.jpg"
                 fill
                 className="rounded-xl object-cover"
                 unoptimized

@@ -8,6 +8,7 @@ import Carousel from "./components/Carousel";
 import CategorySlider from "./components/CategorySlider";
 import NewArrival from "./components/NewArrival";
 import ArrivalTabs from "./components/ArrivalTabs";
+import ProductShowcase from "./components/ProductShowcase";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <CategorySlider />
       <Benefits />
       <WhySerowcut />
+      <ProductShowcase />
       <NewArrival />
       <ArrivalTabs />
       <Carousel />

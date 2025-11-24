@@ -6,7 +6,6 @@ import { RiCustomerService2Fill } from "react-icons/ri";
 import { FaPeopleCarry, FaCheckCircle } from "react-icons/fa";
 import { MdPublishedWithChanges } from "react-icons/md";
 import { FaLightbulb } from "react-icons/fa6";
-import Link from "next/link";
 
 const specialItems = [
   {
@@ -150,7 +149,7 @@ const About = () => {
       {/* ---------------------- */}
 
       <section className="overflow-hidden pb-12 lg:pt-[120px] lg:pb-[90px] bg-gradient-to-br from-slate-950 to-slate-700 pt-10 md:pt-10 text-white px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-        <div className="container mx-auto">
+        <div className="max-w-screen-xl mx-auto">
           <div className="flex flex-wrap items-center justify-between -mx-4">
             <div className="w-full px-4 lg:w-6/12">
               <div className="flex items-center -mx-3 sm:-mx-4">
@@ -812,7 +811,9 @@ const About = () => {
                   {item.icon}
                 </span>
                 <div>
-                  <h2 className="text-lg font-bold">{item.title}</h2>
+                  <h2 className="text-lg font-bold bg-gradient-to-b from-sky-600 to-slate-700 bg-clip-text text-transparent">
+                    {item.title}
+                  </h2>
                   <p className="mt-1 text-sm text-gray-300">
                     {item.description}
                   </p>
