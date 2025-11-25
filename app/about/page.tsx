@@ -155,26 +155,35 @@ const About = () => {
               <div className="flex items-center -mx-3 sm:-mx-4">
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="py-3 sm:py-4">
-                    <img
-                      src="https://i.ibb.co/gFb3ns6/image-1.jpg"
-                      alt=""
+                    <Image
+                      src="/Home-serowcut.jpg"
+                      alt="aboutus"
                       className="w-full rounded-2xl"
+                      width={800}
+                      height={600}
+                      unoptimized
                     />
                   </div>
                   <div className="py-3 sm:py-4">
-                    <img
-                      src="https://i.ibb.co/rfHFq15/image-2.jpg"
-                      alt=""
+                    <Image
+                      src="/serow-innovation.jpeg"
+                      alt="aboutus"
                       className="w-full rounded-2xl"
+                      width={800}
+                      height={600}
+                      unoptimized
                     />
                   </div>
                 </div>
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="relative z-10 my-4">
-                    <img
-                      src="https://i.ibb.co/9y7nYCD/image-3.jpg"
-                      alt=""
+                    <Image
+                      src="/serowcut-products.jpg"
+                      alt="aboutus"
                       className="w-full rounded-2xl"
+                      width={800}
+                      height={600}
+                      unoptimized
                     />
                     <span className="absolute -right-7 -bottom-7 z-[-1]">
                       <svg
@@ -753,7 +762,7 @@ const About = () => {
 
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="mt-10 lg:mt-0">
-                <span className="block mb-4 text-lg font-semibold text-primary">
+                <span className="block mb-4 text-lg font-semibold  bg-gradient-to-b from-sky-600 to-slate-700 bg-clip-text text-transparent">
                   Why Choose Us
                 </span>
                 <h2 className="mb-5 text-3xl font-bold text-dark dark:text-white sm:text-[40px]/[48px]">

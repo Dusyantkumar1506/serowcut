@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 const pentaFeatures = [
   { title: "Modular Plates", image: "/switch7.webp" },
@@ -57,9 +58,11 @@ const PentaModularSection: React.FC = () => (
                   >
                     {feature.title}
                   </h3>
-                  <span className="inline-flex items-center px-2 py-1 text-xs font-medium rounded-md bg-white/8 text-white">
-                    View
-                  </span>
+                  <Link href="/products">
+                    <span className="inline-flex items-center px-2 py-1 text-xs font-medium rounded-md bg-white/8 text-white">
+                      View
+                    </span>
+                  </Link>
                 </div>
               </article>
             ))}
