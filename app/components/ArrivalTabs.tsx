@@ -141,7 +141,7 @@ export default function NewArrivals() {
             <button
               key={cat.id}
               onClick={() => setActiveCategory(cat.id)}
-              className={`px-4 py-2 text-sm rounded-full font-medium transition-all duration-300 ${
+              className={`px-3 py-2 text-xs rounded-full font-medium transition-all duration-300 ${
                 activeCategory === cat.id
                   ? "bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-lg shadow-blue-500/50"
                   : "bg-white/5 text-gray-300 border border-white/10 hover:bg-white/10 hover:border-white/20"

@@ -384,36 +384,35 @@ const data = [
   },
 
   {
-    img: "/wires/wire-green.webp",
-    title: "Serowcut Wire .75 mm",
+    img: "/wires/green-wires.webp",
+    title: "Green Wire 0.75 sq mm",
     company: "Serowcut",
     category: "wires",
   },
   {
-    img: "/wires/wire-1.5red.webp",
-    title: "Serowcut Wire 1.5 mm",
+    img: "/wires/red-wires-1.5mm.webp",
+    title: "Red Wire 1.5 sq mm",
     company: "Serowcut",
     category: "wires",
   },
   {
-    img: "/wires/wire-blue.webp",
-    title: "Serowcut Wire 1 mm",
+    img: "/wires/blue-wires.webp",
+    title: "Blue Wire 1 sq mm",
     company: "Serowcut",
     category: "wires",
   },
   {
-    img: "/wires/wire-black.webp",
-    title: "Serowcut Wire 4 mm",
+    img: "/wires/red-wires-2.5mm.webp",
+    title: "Red Wire 2.5 sq mm",
     company: "Serowcut",
     category: "wires",
   },
   {
-    img: "/wires/wire-2.5red.webp",
-    title: "Serowcut Wire 2.5 mm",
+    img: "/wires/black-wires.webp",
+    title: "Black Wire 2.5 sq mm",
     company: "Serowcut",
     category: "wires",
   },
-
   {
     img: "/wires/2core-1mm.webp",
     title: "Serowcut 2core 1mm Wire",

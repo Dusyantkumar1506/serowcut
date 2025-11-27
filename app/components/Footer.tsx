@@ -7,7 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const Footer = () => {
-  const emailAddress = "serowcut@gmail.com";
+  const emailAddress = "support@serowcut.in";
   const phoneNumber = "+919370000038";
   const developerNo = "+917988064796";
 

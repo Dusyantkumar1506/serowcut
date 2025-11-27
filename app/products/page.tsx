@@ -18,7 +18,7 @@ const Products = () => {
   const [category, setCategory] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 12;
-  const emailAddress = "serowcut@gmail.com";
+  const emailAddress = "support@serowcut.in";
 
   const filteredProducts = useMemo(() => {
     return data.filter((product) => {

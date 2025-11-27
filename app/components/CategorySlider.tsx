@@ -15,7 +15,7 @@ const productsCategory = [
   },
   {
     id: 2,
-    image: "/red-switch.webp",
+    image: "/socket-switch-cat.jpg",
     width: 800,
     height: 600,
   },
@@ -51,7 +51,7 @@ const productsCategory = [
   },
   {
     id: 8,
-    image: "/modulebox.webp",
+    image: "/modulebox-cat.jpg",
     width: 800,
     height: 600,
   },
@@ -75,7 +75,7 @@ const CategorySlider = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 1500,
     beforeChange: (current: number, next: number) => setSlideIndex(next),
     centerMode: true,
     responsive: [
@@ -98,7 +98,7 @@ const CategorySlider = () => {
 
   return (
     <section className="w-full bg-[#0b0c13] text-white py-8 pb-16">
-      <div className="max-w-screen-xl mx-auto px-4">
+      <div className="max-w-screen-xl mx-auto ">
         <h2 className="text-center font-bold text-3xl mb-10">
           Our{" "}
           <span className="bg-gradient-to-b from-sky-600 to-slate-700 bg-clip-text text-transparent">

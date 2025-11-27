@@ -10,7 +10,7 @@ import Image from "next/image";
 import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
-  const emailAddress = "serowcut@gmail.com";
+  const emailAddress = "support@serowcut.in";
   const whatsappNumber = "919370000038";
 
   return (
