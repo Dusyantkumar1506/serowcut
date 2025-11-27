@@ -32,7 +32,7 @@ const ImageSlider = () => {
   const slides = [
     { img: "/serowcut-banner.webp", text: "Switches and Sockets" },
     {
-      img: "/Decorative-lights.jpg",
+      img: "/decor-light-banner.jpg",
       text: "Decorative Lights",
     },
     {
@@ -41,7 +41,6 @@ const ImageSlider = () => {
     },
     { img: "/access.webp", text: "All Accessories" },
     { img: "/roma_banner_0.webp", text: "Serowcut Switches and Sockets" },
-    { img: "/wires.webp", text: "Wires, Cables and Tapes" },
     {
       img: "/PVC-Conduits-and-Accessories.jpg",
       text: "PVC Conduits and Accessories",
@@ -51,7 +50,7 @@ const ImageSlider = () => {
       text: "Bulbs",
     },
     {
-      img: "/geyser-banner.jpg",
+      img: "/geyser-bannerr.jpg",
       text: "Serowcut Geysers",
     },
   ];
