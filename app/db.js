@@ -179,13 +179,13 @@ const data = [
 
   {
     img: "/Single-Switch-1.webp",
-    title: "Single Switch",
+    title: "16A. One Way Switch",
     company: "Serowcut",
     category: "switches",
   },
   {
     img: "/single-switch.webp",
-    title: "Single Switch",
+    title: "16A. 1 Way Switch",
     company: "Serowcut",
     category: "switches",
   },
@@ -254,32 +254,32 @@ const data = [
   },
   {
     img: "/3-pin-socket.webp",
-    title: "3 Pin Socket",
+    title: "Boat 6A./16A. 3 Pin Multi Plug",
     company: "Serowcut",
     category: "sockets",
   },
   {
     img: "/3-pin-socket2.webp",
-    title: "3 Pin Socket",
+    title: "Royal 6A. 3 Multi Plug",
     company: "Serowcut",
     category: "sockets",
   },
   {
     img: "/3-pin-socket-3.webp",
-    title: "3 Pin Socket",
+    title: "6 & 16A Universal Socket",
     company: "Serowcut",
     category: "sockets",
   },
 
   {
     img: "/plug.webp",
-    title: "Plug",
+    title: "Glory 2 Pin Top",
     company: "Serowcut",
     category: "sockets",
   },
   {
     img: "/plug-male-female.webp",
-    title: "Plug Male Female",
+    title: "Glory Male/Female",
     company: "Serowcut",
     category: "sockets",
   },
@@ -414,28 +414,70 @@ const data = [
     category: "wires",
   },
 
+  {
+    img: "/wires/2core-1mm.webp",
+    title: "Serowcut 2core 1mm Wire",
+    company: "Serowcut",
+    category: "wires",
+  },
+  {
+    img: "/wires/2core-1.5mm.jpeg",
+    title: "Serowcut 2core 1.5mm Wire",
+    company: "Serowcut",
+    category: "wires",
+  },
+  {
+    img: "/wires/2core-2.5mm.jpg",
+    title: "Serowcut 2core 2.5mm Wire",
+    company: "Serowcut",
+    category: "wires",
+  },
+  {
+    img: "/wires/2core-4mm.jpg",
+    title: "Serowcut 2core 4mm Wire",
+    company: "Serowcut",
+    category: "wires",
+  },
+  {
+    img: "/wires/2core-6mm.png",
+    title: "Serowcut 2core 6mm Wire",
+    company: "Serowcut",
+    category: "wires",
+  },
+  {
+    img: "/wires/3core.webp",
+    title: "Serowcut 3core Wire",
+    company: "Serowcut",
+    category: "wires",
+  },
+  {
+    img: "/wires/4core.jpeg",
+    title: "Serowcut 4core Wire",
+    company: "Serowcut",
+    category: "wires",
+  },
   // bulb holder
   {
     img: "/bulbholder/Bulb-Holder-1.webp",
-    title: "Bulb Holder",
+    title: "Pendent Holder",
     company: "Serowcut",
     category: "bulbholder",
   },
   {
     img: "/bulbholder/Bulb-Holder-2.webp",
-    title: "Bulb Holder",
+    title: "Pendent Holder",
     company: "Serowcut",
     category: "bulbholder",
   },
   {
     img: "/bulbholder/Bulb-Holder-3.webp",
-    title: "Bulb Holder",
+    title: "Multi Bulb Holder",
     company: "Serowcut",
     category: "bulbholder",
   },
   {
     img: "/bulbholder/Bulb-Holder-4.webp",
-    title: "Bulb Holder",
+    title: "Multi Bulb Holder",
     company: "Serowcut",
     category: "bulbholder",
   },
@@ -971,25 +1013,25 @@ const data = [
   // geyser
   {
     img: "/geyser/geyser-1.webp",
-    title: "Geyser",
+    title: "Abs 25ltr Geyser",
     company: "Serowcut",
     category: "geyser",
   },
   {
     img: "/geyser/geyser-2.webp",
-    title: "Geyser",
+    title: "25ltr Infinity Geyser",
     company: "Serowcut",
     category: "geyser",
   },
   {
     img: "/geyser/geyser-3.webp",
-    title: "Geyser",
+    title: "3ltr Instant Geyser",
     company: "Serowcut",
     category: "geyser",
   },
   {
     img: "/geyser/geyser-4.webp",
-    title: "Geyser",
+    title: "25ltr Geyser Glass tank",
     company: "Serowcut",
     category: "geyser",
   },
