@@ -1057,7 +1057,7 @@ const data = [
 
   // battery
   {
-    img: "/battery/battery.webp",
+    img: "/battery/Battery.webp",
     title: "Serowcut Battery",
     company: "Serowcut",
     category: "battery",

@@ -90,7 +90,7 @@ export default function NewArrivals() {
       name: "Serowcut Battery",
       category: "battery",
       badge: "Bestseller",
-      img: "/battery/battery.webp",
+      img: "/battery/Battery.webp",
     },
   ];
 
